@@ -1,10 +1,13 @@
 // Handle all GSAP animations and scroll triggers
 export function initAnimations() {
+    console.log('Initializing animations...'); // Debug log
+    
     // Mountain fade in
     gsap.to('.mountain-layer', {
         opacity: 1,
         duration: 2,
-        delay: 0.5
+        delay: 0.5,
+        ease: 'power2.inOut'
     });
 
     // Controls fade in sequence
@@ -43,4 +46,10 @@ export function initAnimations() {
                 var(--space-blue-1), var(--space-blue-2))`;
         }
     });
-} 
+}
+
+// Auto-initialize when the DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing animations...'); // Debug log
+    initAnimations();
+}); 

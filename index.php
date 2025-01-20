@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/controls.css">
+    <!-- Load GSAP and plugins first -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <!-- Load our modules after -->
+    <script src="js/animations.js" type="module"></script>
+    <script src="js/controls.js" type="module"></script>
+    <script src="js/spinners.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
 </head>
 <body>
+    <!-- Header with video link -->
+    <header class="site-header">
+        <a href="https://youtu.be/Wcyk7TK3DNY?si=9iKDKuf_GQhyoUof&t=433" target="_blank" rel="noopener noreferrer" class="video-link">
+            Watch the Video
+        </a>
+    </header>
+
     <div id="loading-screen" class="loading-screen">
         <div class="loader"></div>
     </div> 
@@ -74,10 +87,5 @@
             </button>
         </div>
     </div>
-
-    <script src="js/main.js" type="module"></script>
-    <script src="js/animations.js" type="module"></script>
-    <script src="js/controls.js" type="module"></script>
-    <script src="js/spinners.js" type="module"></script>
 </body>
 </html> 
