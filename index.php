@@ -6,8 +6,8 @@ require_once 'includes/logger.php';
 Logger::init();
 
 // Initialize session and get user experience
-$sessionData = SessionHandler::initSession($_GET['ux'] ?? null);
-$currentExperience = SessionHandler::getPreferredExperience();
+$sessionData = UXSessionHandler::initSession($_GET['ux'] ?? null);
+$currentExperience = UXSessionHandler::getPreferredExperience();
 
 // Log the visit
 Logger::logVisit($sessionData);

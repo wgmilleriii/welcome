@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-class SessionHandler {
+class UXSessionHandler {
     private const COOKIE_NAME = 'preferred_experience';
     private const COOKIE_DURATION = 2592000; // 30 days in seconds
     private const SESSION_PREFIX = 'ux_';
@@ -21,6 +21,9 @@ class SessionHandler {
         // Set experience preference if provided
         if ($ux) {
             self::setPreferredExperience($ux);
+        } else {
+            // If no experience is provided, get the current preferred experience
+            $_SESSION[self::SESSION_PREFIX . 'experience'] = self::getPreferredExperience();
         }
 
         // Generate or get visitor ID
@@ -28,15 +31,21 @@ class SessionHandler {
             $_SESSION[self::SESSION_PREFIX . 'visitor_id'] = uniqid('v_', true);
         }
 
+        error_log("Session initialized - Visitor ID: " . $_SESSION[self::SESSION_PREFIX . 'visitor_id'] . 
+                 ", Experience: " . $_SESSION[self::SESSION_PREFIX . 'experience']);
+
         return [
             'visitor_id' => $_SESSION[self::SESSION_PREFIX . 'visitor_id'],
             'visit_count' => $_SESSION[self::SESSION_PREFIX . 'visit_count'],
             'first_visit' => $_SESSION[self::SESSION_PREFIX . 'first_visit'],
-            'last_visit' => $_SESSION[self::SESSION_PREFIX . 'last_visit']
+            'last_visit' => $_SESSION[self::SESSION_PREFIX . 'last_visit'],
+            'experience' => $_SESSION[self::SESSION_PREFIX . 'experience']
         ];
     }
 
     public static function setPreferredExperience($experience) {
+        error_log("Setting preferred experience: " . $experience);
+        
         setcookie(
             self::COOKIE_NAME,
             $experience,
@@ -50,25 +59,34 @@ class SessionHandler {
     }
 
     public static function getPreferredExperience() {
+        $experience = 'stravinsky'; // Default experience
+        
         if (isset($_GET['ux'])) {
-            return $_GET['ux'];
+            $experience = $_GET['ux'];
+            error_log("Experience from URL: " . $experience);
+        } elseif (isset($_COOKIE[self::COOKIE_NAME])) {
+            $experience = $_COOKIE[self::COOKIE_NAME];
+            error_log("Experience from cookie: " . $experience);
+        } elseif (isset($_SESSION[self::SESSION_PREFIX . 'experience'])) {
+            $experience = $_SESSION[self::SESSION_PREFIX . 'experience'];
+            error_log("Experience from session: " . $experience);
+        } else {
+            error_log("Using default experience: " . $experience);
         }
-        if (isset($_COOKIE[self::COOKIE_NAME])) {
-            return $_COOKIE[self::COOKIE_NAME];
-        }
-        if (isset($_SESSION[self::SESSION_PREFIX . 'experience'])) {
-            return $_SESSION[self::SESSION_PREFIX . 'experience'];
-        }
-        return 'stravinsky'; // Default experience
+        
+        return $experience;
     }
 
     public static function getSessionData() {
-        return [
+        $data = [
             'visitor_id' => $_SESSION[self::SESSION_PREFIX . 'visitor_id'] ?? null,
             'visit_count' => $_SESSION[self::SESSION_PREFIX . 'visit_count'] ?? 0,
             'first_visit' => $_SESSION[self::SESSION_PREFIX . 'first_visit'] ?? null,
             'last_visit' => $_SESSION[self::SESSION_PREFIX . 'last_visit'] ?? null,
-            'experience' => $_SESSION[self::SESSION_PREFIX . 'experience'] ?? null
+            'experience' => $_SESSION[self::SESSION_PREFIX . 'experience'] ?? 'stravinsky'
         ];
+        
+        error_log("Getting session data: " . json_encode($data));
+        return $data;
     }
 } 

@@ -49,7 +49,45 @@ async function init() {
     }
 }
 
-// Initialize after content loads
-document.addEventListener('DOMContentLoaded', init);
+// Wait for all required scripts to load
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing application...');
+
+    // Initialize animations
+    import('./animations.js')
+        .then(module => {
+            console.log('Animations module loaded');
+            module.initAnimations();
+        })
+        .catch(err => console.error('Error loading animations:', err));
+
+    // Initialize UX detector
+    import('./ux-detector.js')
+        .then(module => {
+            console.log('UX detector module loaded');
+        })
+        .catch(err => console.error('Error loading UX detector:', err));
+
+    // Initialize controls
+    import('./controls.js')
+        .then(module => {
+            console.log('Controls module loaded');
+        })
+        .catch(err => console.error('Error loading controls:', err));
+
+    // Initialize spinners
+    import('./spinners.js')
+        .then(module => {
+            console.log('Spinners module loaded');
+        })
+        .catch(err => console.error('Error loading spinners:', err));
+
+    // Initialize analytics
+    import('./analytics.js')
+        .then(module => {
+            console.log('Analytics module loaded');
+        })
+        .catch(err => console.error('Error loading analytics:', err));
+});
 
 export { state }; 

@@ -26,7 +26,7 @@ if (!isset($data['type'])) {
 try {
     switch ($data['type']) {
         case 'pageview':
-            Logger::logVisit(SessionHandler::getSessionData());
+            Logger::logVisit(UXSessionHandler::getSessionData());
             break;
             
         case 'interaction':

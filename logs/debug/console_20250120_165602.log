@@ -1,0 +1,40 @@
+lockdown-install.js:1 Removing unpermitted intrinsics
+welcome/:1 Uncaught TypeError: Failed to resolve module specifier "gsap". Relative references must start with either "/", "./", or "../".
+welcome/:1 Uncaught TypeError: Failed to resolve module specifier "gsap". Relative references must start with either "/", "./", or "../".
+log.php:1 
+        
+        
+       Failed to load resource: the server responded with a status of 404 (Not Found)
+analytics.js:137 Analytics error: Error: HTTP error! status: 404
+    at Analytics.sendLog (analytics.js:133:23)
+    at async Analytics.logPageview (analytics.js:73:13)
+sendLog @ analytics.js:137
+welcome/:1 Uncaught (in promise) Error: Could not establish connection. Receiving end does not exist.
+analytics.js:121 
+        
+        
+       POST http://localhost:8888/api/log.php 404 (Not Found)
+sendLog @ analytics.js:121
+logExit @ analytics.js:104
+(anonymous) @ analytics.js:66
+analytics.js:137 Analytics error: Error: HTTP error! status: 404
+    at Analytics.sendLog (analytics.js:133:23)
+    at async Analytics.logExit (analytics.js:104:13)
+sendLog @ analytics.js:137
+await in sendLog
+logExit @ analytics.js:104
+(anonymous) @ analytics.js:66
+analytics.js:121 
+        
+        
+       POST http://localhost:8888/api/log.php 404 (Not Found)
+sendLog @ analytics.js:121
+logExit @ analytics.js:104
+(anonymous) @ analytics.js:66
+analytics.js:137 Analytics error: Error: HTTP error! status: 404
+    at Analytics.sendLog (analytics.js:133:23)
+    at async Analytics.logExit (analytics.js:104:13)
+sendLog @ analytics.js:137
+await in sendLog
+logExit @ analytics.js:104
+(anonymous) @ analytics.js:66
