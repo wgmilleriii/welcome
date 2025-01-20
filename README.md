@@ -2,7 +2,7 @@
 
 An immersive web experience featuring dynamic text animations, parallax scrolling, and interactive mountain scenes with background music.
 
-![Sandia Mountains Landscape](includes/i/Sandia_Mountains_(49952516771).jpg)
+![Sandia Mountains Landscape](https://raw.githubusercontent.com/wgmilleriii/welcome/main/includes/i/Sandia_Mountains_(49952516771).jpg)
 
 ## Project Structure
 
