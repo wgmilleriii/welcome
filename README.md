@@ -2,7 +2,17 @@
 
 An immersive web experience featuring dynamic text animations, parallax scrolling, and interactive mountain scenes with background music.
 
-![Sandia Mountains Landscape](https://raw.githubusercontent.com/wgmilleriii/welcome/main/includes/i/Sandia_Mountains_(49952516771).jpg)
+![Sandia Mountains Landscape](https://raw.githubusercontent.com/wgmilleriii/welcome/main/includes/i/Sandia_Mountains_optimized.jpg)
+
+## Milestones & Updates 🎉
+
+### January 20, 2025
+- 🚀 Major Performance Improvement: Optimized mountain imagery from 20.9MB to 339KB (98.4% reduction!)
+- 📚 Added comprehensive TODO organization system
+- 🤝 Implemented contributor-friendly documentation
+- 🏗️ Established project structure and core features
+
+Our journey began with a vision to create an immersive mountain experience, and we're making great strides in optimization and organization. The recent image optimization milestone significantly improves load times while maintaining visual quality.
 
 ## Project Structure
 
