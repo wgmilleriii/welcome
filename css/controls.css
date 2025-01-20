@@ -1,0 +1,47 @@
+.controls {
+    position: fixed;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.audio-controls {
+    top: 1rem;
+    left: 1rem;
+}
+
+.spin-controls {
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+}
+
+.mountain-controls {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.control-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.mountain-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color: white;
+} 

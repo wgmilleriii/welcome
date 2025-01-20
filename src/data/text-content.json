@@ -1,0 +1,159 @@
+{
+  "sentences": [
+    {
+      "start": {
+        "options": ["Explore", "Discover", "Journey", "Venture", "Wander"],
+        "spinSpeed": {
+          "min": 0.5,
+          "max": 10.0
+        },
+        "spinDirection": "clockwise",
+        "yOffset": 20
+      },
+      "middle": {
+        "text": "through the",
+        "isStatic": true,
+        "yOffset": 0
+      },
+      "end": {
+        "options": ["unknown", "cosmos", "stars", "void", "infinity"],
+        "spinSpeed": {
+          "min": 0.5,
+          "max": 10.0
+        },
+        "spinDirection": "counterclockwise",
+        "yOffset": -20
+      },
+      "wholeSentenceEffect": {
+        "parallaxDepth": 0.5,
+        "shadowColor": "rgba(0, 0, 0, 0.5)",
+        "shadowBlur": "10px",
+        "shadowOffset": {"x": "2px", "y": "2px"}
+      }
+    },
+    {
+      "start": {
+        "options": ["Drift", "Float", "Glide", "Soar", "Rise"],
+        "spinSpeed": 1.2,
+        "spinDirection": "clockwise"
+      },
+      "middle": {
+        "text": "beyond the",
+        "isStatic": true
+      },
+      "end": {
+        "options": ["horizon", "atmosphere", "boundaries", "limits", "known"],
+        "spinSpeed": 0.8,
+        "spinDirection": "counterclockwise"
+      },
+      "wholeSentenceEffect": {
+        "parallaxDepth": 0.6,
+        "shadowColor": "rgba(0, 0, 255, 0.4)",
+        "shadowBlur": "12px",
+        "shadowOffset": {"x": "3px", "y": "3px"}
+      }
+    }
+  ],
+  "backgrounds": {
+    "mountains": [
+      {
+        "id": "mountain1",
+        "src": "assets/mountain1.png",
+        "alt": "Mountain Scene 1"
+      },
+      {
+        "id": "mountain2",
+        "src": "assets/mountain2.png",
+        "alt": "Mountain Scene 2"
+      }
+    ],
+    "fadeInDuration": 2000,
+    "parallaxDepth": 0.2
+  },
+  "gradients": [
+    {
+      "id": "gradient1",
+      "colors": ["#001f3f", "#003366"],
+      "parallaxShift": 0.1
+    },
+    {
+      "id": "gradient2",
+      "colors": ["#000033", "#000066"],
+      "parallaxShift": 0.2
+    }
+  ],
+  "controls": {
+    "spinControls": {
+      "position": "top-right",
+      "fadeInDelay": 1000,
+      "fadeInDuration": 500
+    },
+    "mountainControls": {
+      "position": "bottom-center",
+      "fadeInDelay": 2500,
+      "fadeInDuration": 500
+    },
+    "audioControls": {
+      "position": "top-left",
+      "fadeInDelay": 0,
+      "fadeInDuration": 500
+    }
+  },
+  "animation": {
+    "sequence": [
+      {
+        "element": "audioControls",
+        "delay": 0
+      },
+      {
+        "element": "mountain",
+        "delay": 500
+      },
+      {
+        "element": "text",
+        "delay": 1500
+      },
+      {
+        "element": "spinControls",
+        "delay": 2000
+      },
+      {
+        "element": "mountainControls",
+        "delay": 2500
+      }
+    ],
+    "scrollTriggers": {
+      "spinStart": 0.1,
+      "spinStop": 0.9
+    }
+  },
+  "parallaxLayers": [
+    {
+      "id": "mountain",
+      "depth": 0.1,
+      "initialState": "hidden",
+      "fadeInDuration": 2000,
+      "fadeInTrigger": "scroll-position-0"
+    },
+    {
+      "id": "text-start-spinner",
+      "depth": 0.3,
+      "rotationSpeed": 1.0
+    },
+    {
+      "id": "text-middle",
+      "depth": 0.5,
+      "isStatic": true
+    },
+    {
+      "id": "text-end-spinner",
+      "depth": 0.7,
+      "rotationSpeed": -0.8
+    },
+    {
+      "id": "whole-sentence",
+      "depth": 0.4,
+      "moveRange": {"y": "-50px", "x": "0"}
+    }
+  ]
+} 
