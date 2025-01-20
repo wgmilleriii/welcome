@@ -1,5 +1,13 @@
 # Professional Music Teachers of New Mexico (PMTNM)
 
+![Sandia Mountains Landscape](https://raw.githubusercontent.com/wgmilleriii/welcome/main/includes/i/Sandia_Mountains_optimized.jpg)
+
+## Quick Actions 🎵
+
+[![Report Bug](https://img.shields.io/github/issues/wgmilleriii/welcome?style=for-the-badge&label=Report%20Bug)](../../issues/new?template=bug_report.md&title=[PMTNM]%20Bug%20Report)
+[![Request Feature](https://img.shields.io/github/issues-pr/wgmilleriii/welcome?style=for-the-badge&label=Request%20Feature)](../../issues/new?template=feature_request.md&title=[PMTNM]%20Feature%20Request)
+[![Join Discussion](https://img.shields.io/github/discussions/wgmilleriii/welcome?style=for-the-badge&label=Join%20Discussion)](../../discussions/new?category=pmtnm)
+
 ## Overview
 PMTNM is a dedicated network of music education professionals committed to advancing the quality of music instruction across New Mexico. We foster collaboration between private instructors, public school teachers, and community music programs to create comprehensive musical education opportunities. Our organization provides professional development, student performance platforms, and innovative teaching resources while celebrating the rich musical heritage of New Mexico.
 
