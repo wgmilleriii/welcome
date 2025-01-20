@@ -2,6 +2,8 @@
 
 An immersive web experience featuring dynamic text animations, parallax scrolling, and interactive mountain scenes with background music.
 
+![Sandia Mountains Landscape](includes/i/Sandia_Mountains_(49952516771).jpg)
+
 ## Project Structure
 
 This project creates an interactive webpage with three main levels:
@@ -80,10 +82,10 @@ A: The site can be deployed on Netlify, Vercel, or GitHub Pages.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on contributing to this project.
+Guidelines for contributing to this project will be added soon.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. License file will be added soon.
 
 
