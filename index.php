@@ -1,3 +1,17 @@
+<?php
+require_once 'includes/session-handler.php';
+require_once 'includes/logger.php';
+
+// Initialize logging system
+Logger::init();
+
+// Initialize session and get user experience
+$sessionData = SessionHandler::initSession($_GET['ux'] ?? null);
+$currentExperience = SessionHandler::getPreferredExperience();
+
+// Log the visit
+Logger::logVisit($sessionData);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +21,18 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/controls.css">
+    <!-- Pass session data to JavaScript -->
+    <script>
+        window.sessionData = <?php echo json_encode($sessionData); ?>;
+        window.currentExperience = <?php echo json_encode($currentExperience); ?>;
+    </script>
     <!-- Load GSAP and plugins first -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
     <!-- Load our modules after -->
+    <script src="js/analytics.js" type="module"></script>
+    <script src="js/ux-detector.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
     <script src="js/controls.js" type="module"></script>
     <script src="js/spinners.js" type="module"></script>
@@ -30,6 +51,19 @@
     </div> 
 
     <div class="container">
+        <!-- Experience Selector -->
+        <div class="experience-selector">
+            <button class="experience-btn" data-experience="stravinsky" data-switch-type="direct" data-tagline="Experience the master himself conducting his revolutionary work">
+                Stravinsky
+            </button>
+            <button class="experience-btn" data-experience="haydn" data-switch-type="redirect" data-tagline="Journey through the divine masterpiece of creation">
+                Haydn
+            </button>
+            <button class="experience-btn" data-experience="singing" data-switch-type="redirect" data-tagline="Discover the intimate beauty of voice and lute">
+                Singing
+            </button>
+        </div>
+
         <!-- Audio Controls -->
         <div id="audio-controls" class="controls audio-controls">
             <button id="mute-btn" class="control-btn" aria-label="Mute">

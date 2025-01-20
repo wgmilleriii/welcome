@@ -3,6 +3,7 @@ import { initAnimations } from './animations.js';
 import { initControls } from './controls.js';
 import { initSpinners } from './spinners.js';
 import { ConfigManager } from './config-manager.js';
+import { experienceManager } from './experience-manager.js';
 
 // Global state
 const state = {
@@ -22,15 +23,9 @@ async function init() {
         const configManager = new ConfigManager();
         await configManager.init();
 
-        // Use configurations in other components
-        const audioSettings = configManager.getConfig('audio', 'settings');
-        const sound = new Howl({
-            src: [configManager.getConfig('audio').tracks[0].path],
-            loop: audioSettings.loop,
-            volume: audioSettings.defaultVolume,
-            autoplay: audioSettings.autoplay
-        });
-
+        // Initialize experience manager
+        await experienceManager.init();
+        
         // Register GSAP ScrollTrigger
         gsap.registerPlugin(ScrollTrigger);
         
@@ -38,7 +33,7 @@ async function init() {
         
         // Initialize all modules
         initAnimations();
-        initControls(state, sound);
+        initControls(state, experienceManager);
         initSpinners(state);
         
         // Remove loading screen

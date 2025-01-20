@@ -1,0 +1,38 @@
+{
+    "experiences": [
+        {
+            "id": "stravinsky",
+            "title": "Stravinsky Conducts",
+            "videoUrl": "https://youtu.be/Wcyk7TK3DNY?si=9iKDKuf_GQhyoUof&t=433",
+            "audioFile": "mp3/Stravinsky Conducts Suite From L' Histoire Du Soldat [ ezmp3.cc ].mp3",
+            "tagline": "Experience the master himself conducting his revolutionary work",
+            "theme": {
+                "primaryColor": "#2C3E50",
+                "accentColor": "#E74C3C"
+            }
+        },
+        {
+            "id": "haydn",
+            "title": "Haydn Creation",
+            "videoUrl": "https://youtu.be/F6O3NQMo-jM?si=4eQrR4Q06mYjYFmO&t=2744",
+            "audioFile": "mp3/haydn-creation.mp3",
+            "tagline": "Journey through the divine masterpiece of creation",
+            "theme": {
+                "primaryColor": "#34495E",
+                "accentColor": "#F1C40F"
+            }
+        },
+        {
+            "id": "singing",
+            "title": "Lute Music and Singing",
+            "videoUrl": "https://www.youtube.com/watch?v=PptQJv4wxdg",
+            "audioFile": "mp3/lute-singing.mp3",
+            "tagline": "Discover the intimate beauty of voice and lute",
+            "theme": {
+                "primaryColor": "#8E44AD",
+                "accentColor": "#2ECC71"
+            }
+        }
+    ],
+    "defaultExperience": "stravinsky"
+} 
