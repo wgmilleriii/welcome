@@ -4,6 +4,12 @@ An immersive web experience featuring dynamic text animations, parallax scrollin
 
 ![Sandia Mountains Landscape](https://raw.githubusercontent.com/wgmilleriii/welcome/main/includes/i/Sandia_Mountains_optimized.jpg)
 
+## Contributors ✨
+
+Thanks goes to these wonderful people:
+
+- Jeanne Grealisch - Music Education Specialist
+
 ## Milestones & Updates 🎉
 
 ### January 20, 2025
