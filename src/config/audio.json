@@ -1,1 +1,18 @@
- 
+{
+  "tracks": [
+    {
+      "id": "main",
+      "path": "assets/audio/background.mp3",
+      "name": "Main Theme",
+      "volume": 0.5,
+      "fadeInDuration": 2000,
+      "fadeOutDuration": 1000,
+      "loop": true
+    }
+  ],
+  "settings": {
+    "defaultVolume": 0.5,
+    "startMuted": false,
+    "autoplay": false
+  }
+} 

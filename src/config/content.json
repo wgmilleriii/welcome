@@ -1,1 +1,79 @@
- 
+{
+  "menu": {
+    "buttons": {
+      "primary": {
+        "text": "Start Experience",
+        "action": "start",
+        "href": null,
+        "class": "primary"
+      },
+      "secondary1": {
+        "text": "View Gallery",
+        "action": "gallery",
+        "href": "/gallery",
+        "class": "secondary"
+      },
+      "secondary2": {
+        "text": "About Project",
+        "action": "about",
+        "href": "/about",
+        "class": "secondary"
+      }
+    }
+  },
+  "firstTimeOverlay": {
+    "title": "Welcome to the Experience",
+    "description": "Explore the interactive mountain landscape with dynamic text and immersive audio.",
+    "buttonText": "Begin Journey"
+  },
+  "controls": {
+    "audio": {
+      "playText": "Play",
+      "pauseText": "Pause",
+      "muteText": "Mute",
+      "unmuteText": "Unmute"
+    },
+    "mountain": {
+      "nextText": "Next Scene",
+      "previousText": "Previous Scene"
+    }
+  },
+  "footer": {
+    "cta": {
+      "share": {
+        "text": "Share",
+        "icon": "share",
+        "action": "share"
+      },
+      "download": {
+        "text": "Download",
+        "icon": "download",
+        "action": "download"
+      },
+      "favorite": {
+        "text": "Favorite",
+        "icon": "heart",
+        "action": "favorite"
+      }
+    },
+    "links": [
+      {
+        "text": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms of Use",
+        "href": "/terms"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "Credits",
+        "href": "/credits"
+      }
+    ],
+    "copyright": "© 2024 Mountain Experience. All rights reserved."
+  }
+} 

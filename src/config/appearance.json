@@ -1,1 +1,33 @@
- 
+{
+  "theme": {
+    "colors": {
+      "primary": "#00a8ff",
+      "secondary": "rgba(255, 255, 255, 0.1)",
+      "background": "rgba(0, 31, 63, 0.98)",
+      "text": "#ffffff",
+      "accent": "rgba(255, 255, 255, 0.2)"
+    },
+    "blur": {
+      "menu": "20px",
+      "controls": "8px"
+    }
+  },
+  "backgrounds": {
+    "mountains": [
+      {
+        "id": "mountain1",
+        "path": "assets/mountains/mountain1.png",
+        "name": "Dawn Peak",
+        "description": "Misty mountain at sunrise"
+      },
+      {
+        "id": "mountain2",
+        "path": "assets/mountains/mountain2.png",
+        "name": "Twilight Ridge",
+        "description": "Mountain silhouette at dusk"
+      }
+    ],
+    "defaultMountain": "mountain1",
+    "transitionDuration": 2000
+  }
+} 

@@ -1,1 +1,36 @@
- 
+{
+  "scroll": {
+    "sensitivity": 1.0,
+    "smoothing": 0.1,
+    "threshold": 0.1
+  },
+  "parallax": {
+    "layers": [
+      {
+        "id": "background",
+        "depth": 0.1,
+        "maxOffset": 100
+      },
+      {
+        "id": "midground",
+        "depth": 0.3,
+        "maxOffset": 50
+      },
+      {
+        "id": "foreground",
+        "depth": 0.6,
+        "maxOffset": 25
+      }
+    ]
+  },
+  "animations": {
+    "fadeIn": {
+      "duration": 1000,
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    "slideIn": {
+      "duration": 500,
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  }
+} 

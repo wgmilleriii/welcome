@@ -2,6 +2,7 @@
 import { initAnimations } from './animations.js';
 import { initControls } from './controls.js';
 import { initSpinners } from './spinners.js';
+import { ConfigManager } from './config-manager.js';
 
 // Global state
 const state = {
@@ -13,12 +14,17 @@ const state = {
     lastScrollPos: 0
 };
 
-// Sound setup
+// Initialize configuration
+const configManager = new ConfigManager();
+await configManager.init();
+
+// Use configurations in other components
+const audioSettings = configManager.getConfig('audio', 'settings');
 const sound = new Howl({
-    src: ['assets/audio/background.mp3'],
-    loop: true,
-    volume: 0.5,
-    autoplay: false
+    src: [configManager.getConfig('audio').tracks[0].path],
+    loop: audioSettings.loop,
+    volume: audioSettings.defaultVolume,
+    autoplay: audioSettings.autoplay
 });
 
 // Initialize after content loads

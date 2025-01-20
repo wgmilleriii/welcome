@@ -1,1 +1,40 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote System Test</title>
+    <link rel="stylesheet" href="css/quote-space.css">
+</head>
+<body>
+    <div class="mountain-scene">
+        <!-- Simulated spinners for testing -->
+        <div class="text-spinner" data-position="start">Beginning text</div>
+        <div class="text-spinner" data-position="middle">Middle text</div>
+        <div class="text-spinner" data-position="end">End text</div>
+    </div>
+
+    <!-- Test buttons -->
+    <div style="position: fixed; top: 20px; left: 20px;">
+        <button id="like-score-btn">I Like This Score</button>
+        <button id="dislike-score-btn">I Don't Like This</button>
+    </div>
+
+    <script type="module">
+        import { QuoteBuilder } from './js/quote-builder.js';
+        
+        // Mock config manager for testing
+        const mockConfigManager = {
+            getConfig: () => ({})
+        };
+
+        // Initialize quote builder
+        const quoteBuilder = new QuoteBuilder(mockConfigManager);
+
+        // Add debug logging
+        window.addEventListener('error', function(e) {
+            console.error('Global error:', e.error);
+        });
+    </script>
+</body>
+</html> 

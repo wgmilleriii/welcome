@@ -23,17 +23,27 @@
 }
 
 .control-btn {
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
     cursor: pointer;
-    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
 }
 
 .control-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.control-btn.active {
     background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 .mountain-btn {
@@ -44,4 +54,190 @@
     margin: 0 0.5rem;
     cursor: pointer;
     color: white;
+}
+
+/* Updated controls layout */
+.controls-container {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 10;
+    background: rgba(0, 31, 63, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 0.75rem;
+    border-radius: 12px;
+    transform: translateX(-120%);
+    animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    to { transform: translateX(0); }
+}
+
+/* Video Preview Popup */
+.video-preview {
+    position: fixed;
+    top: 5rem;
+    left: 1rem;
+    background: rgba(0, 31, 63, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1rem;
+    width: 280px;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    z-index: 9;
+}
+
+.video-preview.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 157.5px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+}
+
+.video-info {
+    color: white;
+}
+
+.video-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.video-link {
+    display: inline-block;
+    color: #00a8ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.video-link:hover {
+    color: #0097e6;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .controls-container {
+        top: 0.5rem;
+        left: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .video-preview {
+        top: 4rem;
+        left: 0.5rem;
+        width: calc(100vw - 1rem);
+    }
+}
+
+/* Haptic Feedback Support */
+@media (hover: none) {
+    .control-btn {
+        transition: background 0.3s;
+    }
+
+    .control-btn:active {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Add to existing controls.css */
+.playback-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 300px; /* Ensure enough space for slider */
+}
+
+.scrubber-container {
+    position: relative;
+    flex-grow: 1;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scrubber-track {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.2s;
+}
+
+.scrubber-container:hover .scrubber-track {
+    height: 6px;
+}
+
+.scrubber-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    transform-origin: left;
+}
+
+.scrubber-handle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.scrubber-container:hover .scrubber-handle {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.scrubber-time {
+    position: absolute;
+    background: rgba(0, 31, 63, 0.95);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.scrubber-container:hover .scrubber-time {
+    opacity: 1;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .playback-controls {
+        min-width: 200px;
+    }
+    
+    .scrubber-time {
+        display: none; /* Hide time tooltip on mobile */
+    }
 } 
