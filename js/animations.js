@@ -158,6 +158,12 @@ async function initWaveSurfer(audioConfig) {
         });
     }
 
+    // Ensure WaveSurfer is loaded
+    if (typeof WaveSurfer === 'undefined') {
+        console.error('WaveSurfer failed to load');
+        return null;
+    }
+
     const currentExperience = window.currentExperience || 'stravinsky';
     const audioSettings = audioConfig?.experiences?.[currentExperience] || {
         startPosition: 0,
@@ -264,7 +270,7 @@ function initParallax() {
 
 // Initialize animations
 async function initAnimations() {
-    console.log(`Animations Module v${window.JS_VERSION || '1.1'} initializing...`);
+    console.log('Starting animation initialization...');
     
     // Register ScrollTrigger
     gsap.registerPlugin(ScrollTrigger);
@@ -272,10 +278,19 @@ async function initAnimations() {
     // Initialize parallax effects
     initParallax();
     
-    // Initialize audio setup
-    await initAudioSetup();
+    // Load audio configuration
+    let audioConfig = null;
+    try {
+        const response = await fetch('config/audio.json');
+        audioConfig = await response.json();
+    } catch (error) {
+        console.error('Error loading audio config:', error);
+    }
     
-    console.log('Animations initialized successfully');
+    // Initialize WaveSurfer with config
+    await initWaveSurfer(audioConfig);
+    
+    console.log('Animation initialization complete');
 }
 
 function showContent() {
@@ -407,4 +422,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     
     console.log('Initialization complete');
-}); 
+});
+
+// Export functions
+export { initAnimations, initWaveSurfer }; 

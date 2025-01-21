@@ -10,6 +10,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <!-- Music Player Layer (Always Visible) -->
+    <div class="layer player-layer">
+        <div class="player-wrapper">
+            <div class="player-controls">
+                <button class="player-btn play-pause">▶</button>
+                <div class="track-info">
+                    <span class="track-title">L'Histoire du Soldat</span>
+                    <span class="track-artist">Igor Stravinsky</span>
+                </div>
+                <div class="volume-control">
+                    <button class="player-btn mute">🔊</button>
+                    <input type="range" class="volume-slider" min="0" max="100" value="75">
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Layer -->
     <div class="layer header-layer">
         <div class="mountain-background"></div>
@@ -76,6 +96,18 @@
     <script>
         // Initialize GSAP
         gsap.registerPlugin(ScrollTrigger);
+
+        // Music player parallax (minimal movement)
+        gsap.to(".player-layer", {
+            yPercent: -20,
+            ease: "none",
+            scrollTrigger: {
+                trigger: "body",
+                start: "top top",
+                end: "bottom top",
+                scrub: 0.3
+            }
+        });
 
         // Mountain background parallax (slowest)
         gsap.to(".mountain-background", {
@@ -546,6 +578,107 @@
 
         a:hover {
             opacity: 1;
+        }
+
+        /* Music Player Styles */
+        .player-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(12px);
+            transform: translateY(0);
+            will-change: transform;
+        }
+
+        .player-wrapper {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .player-controls {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .player-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .player-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .track-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .track-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .track-artist {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .volume-slider {
+            width: 100px;
+            height: 4px;
+            -webkit-appearance: none;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+        }
+
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 12px;
+            height: 12px;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 30%;
+            height: 100%;
+            background: linear-gradient(90deg, #4a90e2, #357abd);
+            transform-origin: left;
         }
     </style>
 </body>

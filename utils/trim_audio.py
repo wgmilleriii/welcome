@@ -14,15 +14,23 @@ def load_audio_config():
         print(f"Error loading audio config: {e}")
         return None
 
-def trim_audio(input_file, output_file, start_time, duration):
+def trim_audio(input_file, output_file, start_time, duration, fade_in=0, fade_out=0):
     """Trim audio file to specified duration starting from start_time."""
     try:
+        fade_filter = 'volume=1.0'
+        if fade_in > 0 or fade_out > 0:
+            fade_filter = 'afade=t=in:st=0:d=' + str(fade_in) if fade_in > 0 else 'volume=1.0'
+            if fade_out > 0:
+                fade_start = duration - fade_out
+                fade_filter += ',afade=t=out:st=' + str(fade_start) + ':d=' + str(fade_out)
+            
         cmd = [
             'ffmpeg',
             '-y',  # Overwrite output file if exists
             '-i', input_file,  # Input file
             '-ss', str(start_time),  # Start time
             '-t', str(duration),  # Duration
+            '-af', fade_filter,  # Add fade effects
             '-acodec', 'libmp3lame',  # Use MP3 codec
             '-q:a', '2',  # High quality (0-9, lower is better)
             output_file
@@ -30,6 +38,10 @@ def trim_audio(input_file, output_file, start_time, duration):
         
         print(f"Trimming {input_file} -> {output_file}")
         print(f"Duration: {duration}s, Start: {start_time}s")
+        if fade_in > 0:
+            print(f"Fade in: {fade_in}s")
+        if fade_out > 0:
+            print(f"Fade out: {fade_out}s starting at {fade_start}s")
         print(f"Command: {' '.join(cmd)}")
         
         result = subprocess.run(cmd, capture_output=True, text=True)
@@ -80,16 +92,20 @@ def main():
             print(f"Backing up original: {backup_file}")
             os.rename(input_file, backup_file)
         
-        # Get duration for this experience
+        # Get settings for this experience
         duration = settings.get('duration', default_duration)
         start_time = settings.get('startPosition', 0)
+        fade_in = settings.get('fadeIn', 0)
+        fade_out = settings.get('fadeOut', 0)
         
         # Trim audio
         success = trim_audio(
             backup_file,
             input_file,
             start_time,
-            duration
+            duration,
+            fade_in,
+            fade_out
         )
         
         if success:

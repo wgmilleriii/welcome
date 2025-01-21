@@ -20,15 +20,19 @@ def generate_waveform(input_file, output_file, width=1024, height=400):
         samples = np.array(audio.get_array_of_samples())
         
         # Create blocks of samples for visualization
-        block_size = len(samples) // width
+        block_size = max(1, len(samples) // width)
         blocks = [samples[i:i + block_size] for i in range(0, len(samples), block_size)][:width]
         
         # Calculate peak amplitudes for each block
         peaks = [np.abs(block).max() if len(block) > 0 else 0 for block in blocks]
-        peaks = np.array(peaks) / max(peaks)  # Normalize
+        max_peak = max(peaks)
+        if max_peak == 0:
+            peaks = np.zeros(len(peaks))
+        else:
+            peaks = np.array(peaks) / max_peak  # Normalize
         
         # Create image
-        image = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+        image = Image.new('RGB', (width, height), (0, 0, 0))
         draw = ImageDraw.Draw(image)
         
         # Draw waveform
@@ -44,13 +48,24 @@ def generate_waveform(input_file, output_file, width=1024, height=400):
             # Draw vertical bar
             draw.rectangle(
                 [x, center_y - amplitude, x + bar_width, center_y + amplitude],
-                fill=(255, 255, 255, 255)
+                fill=(255, 255, 255)
             )
         
-        # Save image
+        # Save both PNG and JPG
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        image.save(output_file, 'PNG')
-        print(f"✓ Generated waveform: {output_file}")
+        
+        # Save PNG with transparency
+        png_image = image.copy()
+        png_image.putalpha(255)  # Full opacity
+        png_output = output_file
+        png_image.save(png_output, 'PNG')
+        print(f"✓ Generated PNG waveform: {png_output}")
+        
+        # Save JPG
+        jpg_output = output_file.replace('.png', '.jpg')
+        image.save(jpg_output, 'JPEG', quality=95)
+        print(f"✓ Generated JPG waveform: {jpg_output}")
+        
         return True
     except Exception as e:
         print(f"✗ Error processing {input_file}: {str(e)}")

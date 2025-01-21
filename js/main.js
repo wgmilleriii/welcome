@@ -15,9 +15,10 @@ const state = {
     lastScrollPos: 0
 };
 
-async function init() {
+// Initialize all modules in sequence
+async function initializeModules() {
     try {
-        console.log('Starting initialization...'); // Debug log
+        console.log('Starting module initialization...');
         
         // Initialize configuration
         const configManager = new ConfigManager();
@@ -26,68 +27,45 @@ async function init() {
         // Initialize experience manager
         await experienceManager.init();
         
-        // Register GSAP ScrollTrigger
-        gsap.registerPlugin(ScrollTrigger);
+        // Initialize animations (which includes WaveSurfer)
+        await initAnimations();
         
-        console.log('Initializing core modules...'); // Debug log
-        
-        // Initialize all modules
-        initAnimations();
+        // Initialize remaining modules
         initControls(state, experienceManager);
         initSpinners(state);
         
-        // Remove loading screen
-        const loadingScreen = document.getElementById('loading-screen');
-        if (loadingScreen) {
-            loadingScreen.style.opacity = 0;
-            setTimeout(() => loadingScreen.remove(), 500);
-        }
-        
-        console.log('Initialization complete!'); // Debug log
+        console.log('All modules initialized successfully');
     } catch (error) {
-        console.error('Initialization error:', error);
+        console.error('Error during module initialization:', error);
     }
 }
 
-// Wait for all required scripts to load
-document.addEventListener('DOMContentLoaded', () => {
+// Wait for DOM and required scripts
+document.addEventListener('DOMContentLoaded', async () => {
     console.log('DOM loaded, initializing application...');
-
-    // Initialize animations
-    import('./animations.js')
-        .then(module => {
-            console.log('Animations module loaded');
-            module.initAnimations();
-        })
-        .catch(err => console.error('Error loading animations:', err));
-
-    // Initialize UX detector
-    import('./ux-detector.js')
-        .then(module => {
-            console.log('UX detector module loaded');
-        })
-        .catch(err => console.error('Error loading UX detector:', err));
-
-    // Initialize controls
-    import('./controls.js')
-        .then(module => {
-            console.log('Controls module loaded');
-        })
-        .catch(err => console.error('Error loading controls:', err));
-
-    // Initialize spinners
-    import('./spinners.js')
-        .then(module => {
-            console.log('Spinners module loaded');
-        })
-        .catch(err => console.error('Error loading spinners:', err));
-
-    // Initialize analytics
-    import('./analytics.js')
-        .then(module => {
-            console.log('Analytics module loaded');
-        })
-        .catch(err => console.error('Error loading analytics:', err));
+    
+    // Wait for WaveSurfer script to load
+    await new Promise((resolve) => {
+        const checkWaveSurfer = () => {
+            if (typeof WaveSurfer !== 'undefined') {
+                console.log('WaveSurfer script loaded');
+                resolve();
+            } else {
+                setTimeout(checkWaveSurfer, 100);
+            }
+        };
+        checkWaveSurfer();
+    });
+    
+    // Initialize all modules
+    await initializeModules();
+    
+    // Remove loading screen
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => loadingScreen.remove(), 500);
+    }
 });
 
 // Log initialization

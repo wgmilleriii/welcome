@@ -5,6 +5,7 @@
 We've successfully implemented a beautiful multi-layer parallax experience featuring:
 
 ### Dynamic Layers 🌟
+- Persistent music player with minimal parallax (-20%)
 - Mountain background with subtle movement (-20%)
 - Floating header text with fade effect
 - Side panels with asymmetric speeds
@@ -17,10 +18,22 @@ We've successfully implemented a beautiful multi-layer parallax experience featu
 - Responsive design with backdrop filters
 
 ### Interactive Elements 🎮
+- Persistent music controls with play/pause and volume
+- Progress bar with visual feedback
+- Track information display
 - CTA buttons with hover effects
 - Draggable debug console
 - Smooth scroll animations
 - Position-persistent interface
+
+### Crucial UX Requirements 🎯
+- Music player must remain accessible at all times
+- Player moves up slightly during scroll (-20% max)
+- Player maintains blur backdrop for readability
+- Volume and progress controls always clickable
+- Smooth transitions between audio tracks
+- Visual feedback for player interactions
+- Mobile-responsive player controls
 
 ### Experience Versions 🚀
 - `index3.php`: Three-layer parallax with debug console

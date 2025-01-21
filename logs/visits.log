@@ -380,3 +380,5 @@
 {"type":"pageview","url":"http:\/\/localhost:8888\/cmiller\/public_html\/git\/welcome\/","title":"Parallax Mountain Experience","timestamp":1737423852,"ip":"::1"}
 {"timestamp":1737423852,"visitor_id":"v_678ee118df6bb0.88664886","visit_count":147,"experience":"stravinsky","ip":"::1","user_agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/131.0.0.0 Safari\/537.36","referrer":"direct","landing_page":"\/cmiller\/public_html\/git\/welcome\/"}
 {"type":"pageview","url":"http:\/\/localhost:8888\/cmiller\/public_html\/git\/welcome\/","title":"Parallax Mountain Experience","timestamp":1737423852,"ip":"::1"}
+{"timestamp":1737488151,"visitor_id":"v_678ff717adc519.55474082","visit_count":1,"experience":"stravinsky","ip":"::1","user_agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/131.0.0.0 Safari\/537.36","referrer":"direct","landing_page":"\/cmiller\/public_html\/git\/welcome\/index.php"}
+{"type":"pageview","url":"http:\/\/localhost:8888\/cmiller\/public_html\/git\/welcome\/index.php","title":"Parallax Mountain Experience","timestamp":1737488152,"ip":"::1"}
