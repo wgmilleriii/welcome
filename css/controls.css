@@ -79,20 +79,19 @@
 /* Updated controls layout */
 .controls-container {
     position: fixed;
-    top: 1rem;
-    left: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    bottom: 60px;
+    left: 0;
+    right: 0;
     z-index: 10;
-    background: rgba(0, 31, 63, 0.85);
-    backdrop-filter: blur(8px);
     padding: 0.75rem;
-    border-radius: 12px;
-    transform: translateX(-120%);
-    animation: slideInFromLeft 0.5s ease-out forwards;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
+/* Remove the slideInFromLeft animation */
 @keyframes slideInFromLeft {
     to { transform: translateX(0); }
 }
@@ -153,9 +152,8 @@
 /* Mobile Optimizations */
 @media (max-width: 768px) {
     .controls-container {
-        top: 0.5rem;
-        left: 0.5rem;
-        padding: 0.5rem;
+        bottom: 80px;
+        padding: 1rem;
     }
 
     .video-preview {

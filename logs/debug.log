@@ -265,3 +265,539 @@
 {"type":"exit","timestamp":1737421158,"details":{"timeOnPage":35925.20000000298,"scrollDepth":985},"ip":"::1"}
 {"type":"exit","timestamp":1737421166,"details":{"timeOnPage":8735.5,"scrollDepth":985},"ip":"::1"}
 {"type":"exit","timestamp":1737421166,"details":{"timeOnPage":8736.90000000596,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421206,"details":{"timeOnPage":48086.20000000298,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421206,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421206,"details":{"timeOnPage":48087.20000000298,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421206,"details":{"timeOnPage":48129.40000000596,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421206,"details":{"timeOnPage":48129.79999999702,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421212,"details":{"timeOnPage":6016.5999999940395,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421212,"details":{"timeOnPage":6018.5,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421229,"details":{"timeOnPage":23098.89999999106,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421229,"details":{"timeOnPage":23099.69999998808,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421229,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421229,"details":{"timeOnPage":23134,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421229,"details":{"timeOnPage":23133.79999999702,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421235,"details":{"timeOnPage":5887.79999999702,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421235,"details":{"timeOnPage":5889.20000000298,"scrollDepth":932},"ip":"::1"}
+{"timestamp":1737421235,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421235,"details":{"timeOnPage":5943.5999999940395,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421235,"details":{"timeOnPage":5943.20000000298,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421241,"details":{"timeOnPage":6200.399999991059,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421241,"details":{"timeOnPage":6202.199999988079,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421318,"details":{"timeOnPage":82782.89999999106,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421318,"details":{"timeOnPage":82778.29999999702,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421318,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421318,"details":{"timeOnPage":83093.89999999106,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421318,"details":{"timeOnPage":83095.89999999106,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421320,"details":{"timeOnPage":2417.2999999970198,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421320,"details":{"timeOnPage":2419.5999999940395,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421320,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421320,"details":{"timeOnPage":2463.7999999970198,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421320,"details":{"timeOnPage":2464.7999999970198,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421322,"details":{"timeOnPage":2192.2999999970198,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421322,"details":{"timeOnPage":2193,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421341,"details":{"timeOnPage":20699.19999998808,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421341,"details":{"timeOnPage":20699.89999999106,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421341,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421341,"details":{"timeOnPage":20765.69999998808,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421341,"details":{"timeOnPage":20766.09999999404,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421349,"details":{"timeOnPage":8201.79999999702,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421349,"details":{"timeOnPage":8203.20000000298,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421379,"details":{"timeOnPage":38521.40000000596,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421379,"details":{"timeOnPage":38519.70000000298,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421403,"details":{"timeOnPage":62634.90000000596,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421403,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421403,"details":{"timeOnPage":62635.59999999404,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421403,"details":{"timeOnPage":62694.59999999404,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421403,"details":{"timeOnPage":62694.20000000298,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421407,"details":{"timeOnPage":3817.5,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421407,"details":{"timeOnPage":3816.0999999940395,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421408,"details":{"timeOnPage":5058.399999991059,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421408,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421408,"details":{"timeOnPage":5059.0999999940395,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421408,"details":{"timeOnPage":5083.0999999940395,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421408,"details":{"timeOnPage":5082.5,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421415,"details":{"timeOnPage":6312.29999999702,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421415,"details":{"timeOnPage":6313.5999999940395,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421437,"details":{"timeOnPage":28766.20000000298,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421437,"details":{"timeOnPage":28771.59999999404,"scrollDepth":985},"ip":"::1"}
+{"timestamp":1737421437,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421437,"details":{"timeOnPage":28888.09999999404,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421437,"details":{"timeOnPage":28888.79999999702,"scrollDepth":985},"ip":"::1"}
+{"type":"exit","timestamp":1737421449,"details":{"timeOnPage":11478.20000000298,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421449,"details":{"timeOnPage":11475.5,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421460,"details":{"timeOnPage":22639.20000000298,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421460,"details":{"timeOnPage":22637.40000000596,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421520,"details":{"timeOnPage":83267.70000000298,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421520,"details":{"timeOnPage":83269.09999999404,"scrollDepth":932},"ip":"::1"}
+{"timestamp":1737421520,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421520,"details":{"timeOnPage":83377.29999999702,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421520,"details":{"timeOnPage":83376.59999999404,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421545,"details":{"timeOnPage":25152.20000000298,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421545,"details":{"timeOnPage":25146.5,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421558,"details":{"timeOnPage":37858.29999999702,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421558,"details":{"timeOnPage":37859.40000000596,"scrollDepth":932},"ip":"::1"}
+{"timestamp":1737421558,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421558,"details":{"timeOnPage":37929.59999999404,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421558,"details":{"timeOnPage":37930,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421564,"details":{"timeOnPage":5575.800000011921,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421564,"details":{"timeOnPage":5573.20000000298,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421568,"details":{"timeOnPage":10011.300000011921,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421568,"details":{"timeOnPage":10013.10000000894,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421599,"details":{"timeOnPage":40388,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421599,"details":{"timeOnPage":40389,"scrollDepth":932},"ip":"::1"}
+{"timestamp":1737421599,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421599,"details":{"timeOnPage":40429.20000000298,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421599,"details":{"timeOnPage":40428.60000000894,"scrollDepth":932},"ip":"::1"}
+{"type":"exit","timestamp":1737421607,"details":{"timeOnPage":8319.10000000894,"scrollDepth":344},"ip":"::1"}
+{"timestamp":1737421607,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421607,"details":{"timeOnPage":8320,"scrollDepth":344},"ip":"::1"}
+{"type":"exit","timestamp":1737421607,"details":{"timeOnPage":8340,"scrollDepth":344},"ip":"::1"}
+{"type":"exit","timestamp":1737421607,"details":{"timeOnPage":8340.79999999702,"scrollDepth":344},"ip":"::1"}
+{"type":"exit","timestamp":1737421620,"details":{"timeOnPage":12841.199999988079,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421620,"details":{"timeOnPage":12842.79999999702,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737421620,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421620,"details":{"timeOnPage":12864.39999999106,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421620,"details":{"timeOnPage":12865,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421623,"details":{"timeOnPage":2846.2999999970198,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421623,"details":{"timeOnPage":2844.2000000029802,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421640,"details":{"timeOnPage":20041.79999999702,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421640,"details":{"timeOnPage":20043.79999999702,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737421640,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421640,"details":{"timeOnPage":20137,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421640,"details":{"timeOnPage":20136.5,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421647,"details":{"timeOnPage":7117.0999999940395,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421647,"details":{"timeOnPage":7117.79999999702,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737421647,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421647,"details":{"timeOnPage":7150.79999999702,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421647,"details":{"timeOnPage":7151.399999991059,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421655,"details":{"timeOnPage":8371.20000000298,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737421655,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421655,"details":{"timeOnPage":8372.5,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421655,"details":{"timeOnPage":8411.89999999106,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421655,"details":{"timeOnPage":8411.09999999404,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737421663,"details":{"timeOnPage":8147.5,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421663,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421663,"details":{"timeOnPage":8148.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421663,"details":{"timeOnPage":8199.39999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421663,"details":{"timeOnPage":8199.09999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421677,"details":{"timeOnPage":13682.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421677,"details":{"timeOnPage":13683.59999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421682,"details":{"timeOnPage":18761.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421682,"details":{"timeOnPage":18762.29999999702,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421682,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421682,"details":{"timeOnPage":18799,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421682,"details":{"timeOnPage":18798.39999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421684,"details":{"timeOnPage":1386.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421684,"details":{"timeOnPage":1387,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421684,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421684,"details":{"timeOnPage":1432,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421684,"details":{"timeOnPage":1431.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421690,"details":{"timeOnPage":6158.0999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421690,"details":{"timeOnPage":6158.5999999940395,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421690,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421690,"details":{"timeOnPage":6175.399999991059,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421690,"details":{"timeOnPage":6175.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421708,"details":{"timeOnPage":18385.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421708,"details":{"timeOnPage":18383.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421751,"details":{"timeOnPage":61521.90000000596,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421751,"details":{"timeOnPage":61523.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421755,"details":{"timeOnPage":65593.90000000596,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421755,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421755,"details":{"timeOnPage":65594.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421755,"details":{"timeOnPage":65628.09999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421755,"details":{"timeOnPage":65628.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421767,"details":{"timeOnPage":11374.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421767,"details":{"timeOnPage":11373,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421793,"details":{"timeOnPage":37374.39999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421793,"details":{"timeOnPage":37372.89999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421804,"details":{"timeOnPage":48321.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421804,"details":{"timeOnPage":48322.89999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421831,"details":{"timeOnPage":76146.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421831,"details":{"timeOnPage":76146.29999999702,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421831,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421831,"details":{"timeOnPage":76201.09999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421831,"details":{"timeOnPage":76200.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421851,"details":{"timeOnPage":19259,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421851,"details":{"timeOnPage":19257.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421870,"details":{"timeOnPage":38455.59999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421870,"details":{"timeOnPage":38454,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421924,"details":{"timeOnPage":92641.70000000298,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421924,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421924,"details":{"timeOnPage":92642.40000000596,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421924,"details":{"timeOnPage":92663,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421924,"details":{"timeOnPage":92663.40000000596,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421945,"details":{"timeOnPage":20836.59999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421945,"details":{"timeOnPage":20837.40000000596,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421973,"details":{"timeOnPage":48997.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421973,"details":{"timeOnPage":48996,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421983,"details":{"timeOnPage":59012.20000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421983,"details":{"timeOnPage":59010.40000000596,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421997,"details":{"timeOnPage":72852,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421997,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421997,"details":{"timeOnPage":72852.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421997,"details":{"timeOnPage":72926,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421997,"details":{"timeOnPage":72926.59999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421999,"details":{"timeOnPage":2258.2999999970198,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737421999,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737421999,"details":{"timeOnPage":2259.4000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421999,"details":{"timeOnPage":2298.6000000089407,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737421999,"details":{"timeOnPage":2298.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422002,"details":{"timeOnPage":3046,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422002,"details":{"timeOnPage":3046.5,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"timestamp":1737422002,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422002,"details":{"timeOnPage":3068.5,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422002,"details":{"timeOnPage":3068.8999999910593,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"timestamp":1737422022,"message":"Visit logged for visitor: v_678ef4c62fb4e1.54814121","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422024,"details":{"timeOnPage":21535.30000001192,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422024,"details":{"timeOnPage":21536.20000000298,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"timestamp":1737422024,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422024,"details":{"timeOnPage":21585.40000000596,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422024,"details":{"timeOnPage":21584,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422033,"details":{"timeOnPage":9388.800000011921,"scrollDepth":1155.5555725097656},"ip":"::1"}
+{"timestamp":1737422033,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422033,"details":{"timeOnPage":9390.20000000298,"scrollDepth":1155.5555725097656},"ip":"::1"}
+{"type":"exit","timestamp":1737422033,"details":{"timeOnPage":9416.5,"scrollDepth":1155.5555725097656},"ip":"::1"}
+{"type":"exit","timestamp":1737422033,"details":{"timeOnPage":9416.20000000298,"scrollDepth":1155.5555725097656},"ip":"::1"}
+{"type":"exit","timestamp":1737422036,"details":{"timeOnPage":2563.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422036,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422036,"details":{"timeOnPage":2564,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422036,"details":{"timeOnPage":2585.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422036,"details":{"timeOnPage":2585.8999999910593,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422044,"details":{"timeOnPage":8685.300000011921,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422044,"details":{"timeOnPage":8686.60000000894,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"timestamp":1737422044,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422044,"details":{"timeOnPage":8710.10000000894,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422044,"details":{"timeOnPage":8710.5,"scrollDepth":2031.111083984375},"ip":"::1"}
+{"type":"exit","timestamp":1737422049,"details":{"timeOnPage":4823.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422049,"details":{"timeOnPage":4824.29999999702,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422049,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422049,"details":{"timeOnPage":4856,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422049,"details":{"timeOnPage":4855.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422055,"details":{"timeOnPage":5450.300000011921,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422055,"details":{"timeOnPage":5451.600000008941,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422055,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422055,"details":{"timeOnPage":5504.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422055,"details":{"timeOnPage":5505.20000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422058,"details":{"timeOnPage":3416.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422058,"details":{"timeOnPage":3415,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422062,"details":{"timeOnPage":6884.300000011921,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422062,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422062,"details":{"timeOnPage":6885.4000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422062,"details":{"timeOnPage":6917.4000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422062,"details":{"timeOnPage":6917.9000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422066,"details":{"timeOnPage":3968.300000011921,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422066,"details":{"timeOnPage":3964.9000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422084,"details":{"timeOnPage":22795.40000000596,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422084,"details":{"timeOnPage":22796.40000000596,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422084,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422084,"details":{"timeOnPage":22824.70000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422084,"details":{"timeOnPage":22825.10000000894,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422094,"details":{"timeOnPage":9486.5,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422094,"details":{"timeOnPage":9487.70000000298,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422094,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422094,"details":{"timeOnPage":9522.79999999702,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422094,"details":{"timeOnPage":9522.29999999702,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422100,"details":{"timeOnPage":5787.70000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422100,"details":{"timeOnPage":5790.4000000059605,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422109,"details":{"timeOnPage":15079.40000000596,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422109,"details":{"timeOnPage":15082.5,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422109,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422109,"details":{"timeOnPage":15137.90000000596,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422109,"details":{"timeOnPage":15138.90000000596,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422115,"details":{"timeOnPage":5797.9000000059605,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422115,"details":{"timeOnPage":5798.5,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422115,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422115,"details":{"timeOnPage":5813.70000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422115,"details":{"timeOnPage":5814.100000008941,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422116,"details":{"timeOnPage":1756.2999999970198,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422116,"details":{"timeOnPage":1757,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422116,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422116,"details":{"timeOnPage":1773.2999999970198,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422116,"details":{"timeOnPage":1774,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422125,"details":{"timeOnPage":8067.20000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422125,"details":{"timeOnPage":8069.0999999940395,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422125,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422125,"details":{"timeOnPage":8101.20000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422125,"details":{"timeOnPage":8101.9000000059605,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422126,"details":{"timeOnPage":1788.300000011921,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422126,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422126,"details":{"timeOnPage":1788.800000011921,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422126,"details":{"timeOnPage":1872.300000011921,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422126,"details":{"timeOnPage":1872.7000000029802,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422130,"details":{"timeOnPage":4076.7000000029802,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422130,"details":{"timeOnPage":4074.9000000059605,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422146,"details":{"timeOnPage":19708.79999999702,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422146,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422146,"details":{"timeOnPage":19711.70000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422146,"details":{"timeOnPage":19792.09999999404,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422146,"details":{"timeOnPage":19792.5,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422153,"details":{"timeOnPage":7117.29999999702,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422153,"details":{"timeOnPage":7118.70000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422153,"details":{"timeOnPage":7200.29999999702,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422153,"details":{"timeOnPage":7200.9000000059605,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422180,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737422181,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422181,"details":{"timeOnPage":1553.5999999940395,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422181,"details":{"timeOnPage":1557.5999999940395,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422181,"details":{"timeOnPage":1589.8999999910593,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422181,"details":{"timeOnPage":1590.2999999970198,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422186,"details":{"timeOnPage":5214.5,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422186,"details":{"timeOnPage":5216.100000008941,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422200,"details":{"timeOnPage":19267.10000000894,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422200,"details":{"timeOnPage":19265.40000000596,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422342,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422342,"details":{"timeOnPage":160509.5,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422342,"details":{"timeOnPage":160511.60000000894,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422342,"details":{"timeOnPage":160537.70000000298,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422342,"details":{"timeOnPage":160538.30000001192,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422347,"details":{"timeOnPage":5153.399999991059,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422347,"details":{"timeOnPage":5155.5999999940395,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422354,"details":{"timeOnPage":12833.09999999404,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422354,"details":{"timeOnPage":12833.699999988079,"scrollDepth":1518},"ip":"::1"}
+{"timestamp":1737422354,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422354,"details":{"timeOnPage":12848.09999999404,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422354,"details":{"timeOnPage":12847.699999988079,"scrollDepth":1518},"ip":"::1"}
+{"type":"exit","timestamp":1737422360,"details":{"timeOnPage":6030.5,"scrollDepth":526},"ip":"::1"}
+{"type":"exit","timestamp":1737422360,"details":{"timeOnPage":6031.70000000298,"scrollDepth":526},"ip":"::1"}
+{"timestamp":1737422360,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422360,"details":{"timeOnPage":6048.4000000059605,"scrollDepth":526},"ip":"::1"}
+{"type":"exit","timestamp":1737422360,"details":{"timeOnPage":6049.100000008941,"scrollDepth":526},"ip":"::1"}
+{"type":"exit","timestamp":1737422377,"details":{"timeOnPage":16459.20000000298,"scrollDepth":655},"ip":"::1"}
+{"type":"exit","timestamp":1737422377,"details":{"timeOnPage":16461.20000000298,"scrollDepth":655},"ip":"::1"}
+{"type":"exit","timestamp":1737422409,"details":{"timeOnPage":48377.79999999702,"scrollDepth":655},"ip":"::1"}
+{"type":"exit","timestamp":1737422409,"details":{"timeOnPage":48375,"scrollDepth":655},"ip":"::1"}
+{"timestamp":1737422409,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422409,"details":{"timeOnPage":48415.09999999404,"scrollDepth":655},"ip":"::1"}
+{"type":"exit","timestamp":1737422409,"details":{"timeOnPage":48415.59999999404,"scrollDepth":655},"ip":"::1"}
+{"type":"exit","timestamp":1737422417,"details":{"timeOnPage":8456.09999999404,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422417,"details":{"timeOnPage":8457.79999999702,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422417,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422417,"details":{"timeOnPage":8493,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422417,"details":{"timeOnPage":8493.39999999106,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422431,"details":{"timeOnPage":13562,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422431,"details":{"timeOnPage":13559.39999999106,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422434,"details":{"timeOnPage":16299.699999988079,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422434,"details":{"timeOnPage":16300.89999999106,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422434,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422434,"details":{"timeOnPage":16379.09999999404,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422434,"details":{"timeOnPage":16379.5,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422440,"details":{"timeOnPage":6505.800000011921,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422440,"details":{"timeOnPage":6507.300000011921,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422443,"details":{"timeOnPage":9571.10000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422443,"details":{"timeOnPage":9573.60000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422455,"details":{"timeOnPage":21288.10000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422455,"details":{"timeOnPage":21286.5,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422483,"details":{"timeOnPage":49610,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422483,"details":{"timeOnPage":49608.70000000298,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422483,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422483,"details":{"timeOnPage":49666.70000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422483,"details":{"timeOnPage":49667.10000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422488,"details":{"timeOnPage":5239.5,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422488,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422488,"details":{"timeOnPage":5241.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422488,"details":{"timeOnPage":5261.9000000059605,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422488,"details":{"timeOnPage":5262.5,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422501,"details":{"timeOnPage":12671.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422501,"details":{"timeOnPage":12667.90000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422550,"details":{"timeOnPage":61498.40000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422550,"details":{"timeOnPage":61511.40000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422566,"details":{"timeOnPage":77510.40000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422566,"details":{"timeOnPage":77512.29999999702,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422566,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422566,"details":{"timeOnPage":77585.70000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422566,"details":{"timeOnPage":77585.20000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422580,"details":{"timeOnPage":13566.800000011921,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422580,"details":{"timeOnPage":13568.10000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422600,"details":{"timeOnPage":33905.10000000894,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422600,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422600,"details":{"timeOnPage":33906.5,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422600,"details":{"timeOnPage":34011.90000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422600,"details":{"timeOnPage":34012.70000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422606,"details":{"timeOnPage":6501.199999988079,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422606,"details":{"timeOnPage":6502.5999999940395,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422606,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422606,"details":{"timeOnPage":6519.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422606,"details":{"timeOnPage":6519.899999991059,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422610,"details":{"timeOnPage":3141.2999999970198,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422610,"details":{"timeOnPage":3142.8999999910593,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422654,"details":{"timeOnPage":47776.09999999404,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422654,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422654,"details":{"timeOnPage":47777.19999998808,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422655,"details":{"timeOnPage":48134.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422655,"details":{"timeOnPage":48131.5,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422663,"details":{"timeOnPage":8847.59999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422663,"details":{"timeOnPage":8849.39999999106,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422663,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422663,"details":{"timeOnPage":8906.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422663,"details":{"timeOnPage":8907.199999988079,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422667,"details":{"timeOnPage":3535.300000011921,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422667,"details":{"timeOnPage":3534,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422675,"details":{"timeOnPage":11830.10000000894,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422675,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422675,"details":{"timeOnPage":11830.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422675,"details":{"timeOnPage":11916.300000011921,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422675,"details":{"timeOnPage":11916.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422678,"details":{"timeOnPage":2980,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422678,"details":{"timeOnPage":2978.2999999970198,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422748,"details":{"timeOnPage":72912.5,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422748,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422748,"details":{"timeOnPage":72926.09999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422748,"details":{"timeOnPage":72974,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422748,"details":{"timeOnPage":72974.59999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422749,"details":{"timeOnPage":1704.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422749,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422749,"details":{"timeOnPage":1705.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422749,"details":{"timeOnPage":1725.1000000089407,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422749,"details":{"timeOnPage":1725.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422752,"details":{"timeOnPage":2150.6000000089407,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422752,"details":{"timeOnPage":2151.4000000059605,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737422752,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422752,"details":{"timeOnPage":2174.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422752,"details":{"timeOnPage":2174.300000011921,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737422768,"details":{"timeOnPage":16007.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422768,"details":{"timeOnPage":16004.10000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422781,"details":{"timeOnPage":29224,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422781,"details":{"timeOnPage":29226.40000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422811,"details":{"timeOnPage":59737.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422811,"details":{"timeOnPage":59740.20000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422895,"details":{"timeOnPage":143060.60000000894,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422895,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422895,"details":{"timeOnPage":143061.90000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422895,"details":{"timeOnPage":143168,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422895,"details":{"timeOnPage":143168.60000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422903,"details":{"timeOnPage":7938.4000000059605,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422903,"details":{"timeOnPage":7939.600000008941,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422903,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422903,"details":{"timeOnPage":7967.20000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422903,"details":{"timeOnPage":7967.70000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422916,"details":{"timeOnPage":13337.60000000894,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422916,"details":{"timeOnPage":13333.90000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422932,"details":{"timeOnPage":29063,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422932,"details":{"timeOnPage":29066,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422962,"details":{"timeOnPage":59101.40000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422962,"details":{"timeOnPage":59099.5,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422975,"details":{"timeOnPage":72672.30000001192,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422975,"details":{"timeOnPage":72673.30000001192,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422975,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422975,"details":{"timeOnPage":72709.90000000596,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422975,"details":{"timeOnPage":72710.30000001192,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422980,"details":{"timeOnPage":4551.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422980,"details":{"timeOnPage":4550.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422990,"details":{"timeOnPage":14319.20000000298,"scrollDepth":488},"ip":"::1"}
+{"timestamp":1737422990,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737422990,"details":{"timeOnPage":14320.70000000298,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422991,"details":{"timeOnPage":15233.29999999702,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737422991,"details":{"timeOnPage":15234.5,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737423001,"details":{"timeOnPage":11797.09999999404,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737423001,"details":{"timeOnPage":11794.09999999404,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737423004,"details":{"timeOnPage":14637.59999999404,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737423004,"details":{"timeOnPage":14634.199999988079,"scrollDepth":488},"ip":"::1"}
+{"type":"exit","timestamp":1737423039,"details":{"timeOnPage":49034.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423039,"details":{"timeOnPage":49035,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423039,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423039,"details":{"timeOnPage":49055.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423039,"details":{"timeOnPage":49055.39999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423040,"details":{"timeOnPage":1156.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423040,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423040,"details":{"timeOnPage":1157.5999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423040,"details":{"timeOnPage":1185.2999999970198,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423040,"details":{"timeOnPage":1185.9000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423042,"details":{"timeOnPage":2029,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423042,"details":{"timeOnPage":2027.5,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423045,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423045,"details":{"timeOnPage":5345.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423045,"details":{"timeOnPage":5347.100000008941,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423045,"details":{"timeOnPage":5373.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423045,"details":{"timeOnPage":5372.9000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423048,"details":{"timeOnPage":3088.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423048,"details":{"timeOnPage":3086.3999999910593,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423070,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423070,"details":{"timeOnPage":24817.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423070,"details":{"timeOnPage":24817.09999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423070,"details":{"timeOnPage":24849.09999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423070,"details":{"timeOnPage":24848.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423075,"details":{"timeOnPage":5168.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423075,"details":{"timeOnPage":5169.100000008941,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423075,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423075,"details":{"timeOnPage":5190.600000008941,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423075,"details":{"timeOnPage":5190.20000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423082,"details":{"timeOnPage":6913.5999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423082,"details":{"timeOnPage":6912,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423093,"details":{"timeOnPage":17983.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423093,"details":{"timeOnPage":17982.90000000596,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423093,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423093,"details":{"timeOnPage":18016.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423093,"details":{"timeOnPage":18016.90000000596,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423097,"details":{"timeOnPage":3679.5999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423097,"details":{"timeOnPage":3678.0999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423102,"details":{"timeOnPage":8896.20000000298,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423102,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423102,"details":{"timeOnPage":8897.20000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423102,"details":{"timeOnPage":8930.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423102,"details":{"timeOnPage":8929.89999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423103,"details":{"timeOnPage":1126.6000000089407,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423103,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423103,"details":{"timeOnPage":1127.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423103,"details":{"timeOnPage":1142.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423103,"details":{"timeOnPage":1142.6000000089407,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":947.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423104,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":948.5999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":970.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":970.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":304.29999999701977,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423104,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":304.6000000089407,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":313.70000000298023,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423104,"details":{"timeOnPage":314.1000000089407,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423108,"details":{"timeOnPage":3428.7000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423108,"details":{"timeOnPage":3427.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423113,"details":{"timeOnPage":8626.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423113,"details":{"timeOnPage":8627.5,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423113,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423113,"details":{"timeOnPage":8685.20000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423113,"details":{"timeOnPage":8685.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423119,"details":{"timeOnPage":6513.199999988079,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423119,"details":{"timeOnPage":6515.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423152,"details":{"timeOnPage":39327.39999999106,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423152,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423152,"details":{"timeOnPage":39326.39999999106,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423152,"details":{"timeOnPage":39421.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423152,"details":{"timeOnPage":39421.09999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423158,"details":{"timeOnPage":5683.0999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423158,"details":{"timeOnPage":5683.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423219,"details":{"timeOnPage":66787.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423219,"details":{"timeOnPage":66786.5,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423219,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423219,"details":{"timeOnPage":66862.29999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423219,"details":{"timeOnPage":66862.70000000298,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423225,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423225,"details":{"timeOnPage":5958.79999999702,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423225,"details":{"timeOnPage":5899.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423229,"details":{"timeOnPage":4188.20000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423258,"details":{"timeOnPage":32533.10000000894,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423258,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423258,"details":{"timeOnPage":32628.30000001192,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423269,"details":{"timeOnPage":11486.70000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423286,"details":{"timeOnPage":28890.59999999404,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423714,"details":{"timeOnPage":456484,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423714,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423714,"details":{"timeOnPage":456537.700000003,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423717,"details":{"timeOnPage":3065.2000000029802,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423717,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423717,"details":{"timeOnPage":3080.9000000059605,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423721,"details":{"timeOnPage":4452.100000008941,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423771,"details":{"timeOnPage":53915.5,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423790,"details":{"timeOnPage":73099.20000000298,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423851,"details":{"timeOnPage":133500,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423851,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423851,"details":{"timeOnPage":133553.60000000894,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423852,"details":{"timeOnPage":1052.7999999970198,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423852,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423852,"details":{"timeOnPage":1077.0999999940395,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423852,"details":{"timeOnPage":326.29999999701977,"scrollDepth":875},"ip":"::1"}
+{"timestamp":1737423852,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737423852,"details":{"timeOnPage":336.59999999403954,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423856,"details":{"timeOnPage":4521.699999988079,"scrollDepth":875},"ip":"::1"}
+{"type":"exit","timestamp":1737423856,"details":{"timeOnPage":4548.399999991059,"scrollDepth":875},"ip":"::1"}
