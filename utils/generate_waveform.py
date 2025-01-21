@@ -14,33 +14,38 @@ def generate_waveform(input_file, output_file, width=1024, height=400):
     try:
         # Load audio file and convert to mono
         audio = AudioSegment.from_mp3(input_file)
-        audio = audio.set_channels(1)  # Convert to mono
+        audio = audio.set_channels(1)
         
-        # Get raw audio data as numpy array
+        # Get raw audio data
         samples = np.array(audio.get_array_of_samples())
         
-        # Create chunks for the waveform
-        chunk_size = len(samples) // width
-        chunks = [samples[i:i + chunk_size] for i in range(0, len(samples), chunk_size)][:width]
+        # Create blocks of samples for visualization
+        block_size = len(samples) // width
+        blocks = [samples[i:i + block_size] for i in range(0, len(samples), block_size)][:width]
         
-        # Calculate peak values for each chunk
-        peaks = [abs(chunk).max() if len(chunk) > 0 else 0 for chunk in chunks]
-        
-        # Normalize peaks
-        if max(peaks) > 0:
-            peaks = [p / max(peaks) for p in peaks]
+        # Calculate peak amplitudes for each block
+        peaks = [np.abs(block).max() if len(block) > 0 else 0 for block in blocks]
+        peaks = np.array(peaks) / max(peaks)  # Normalize
         
         # Create image
-        image = Image.new('RGB', (width, height), 'white')
+        image = Image.new('RGBA', (width, height), (0, 0, 0, 0))
         draw = ImageDraw.Draw(image)
         
-        # Calculate center line
-        center_line = height // 2
-        
         # Draw waveform
-        for x, peak in enumerate(peaks):
-            peak_height = int(peak * (height // 2))
-            draw.line([(x, center_line - peak_height), (x, center_line + peak_height)], fill='black', width=1)
+        center_y = height // 2
+        bar_width = 2
+        gap = 1
+        total_width = bar_width + gap
+        
+        for i, peak in enumerate(peaks):
+            x = i * total_width
+            amplitude = int(peak * (height // 2 - 20))  # Leave some padding
+            
+            # Draw vertical bar
+            draw.rectangle(
+                [x, center_y - amplitude, x + bar_width, center_y + amplitude],
+                fill=(255, 255, 255, 255)
+            )
         
         # Save image
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -68,7 +73,7 @@ def get_unprocessed_files(mp3_dir, waveform_dir):
 
 def main():
     parser = argparse.ArgumentParser(description='Generate waveform images from MP3 files')
-    parser.add_argument('--mp3-dir', default='mp3', help='Directory containing MP3 files')
+    parser.add_argument('--mp3-dir', default='audio', help='Directory containing MP3 files')
     parser.add_argument('--waveform-dir', default='includes/i/waveforms', help='Directory for waveform images')
     parser.add_argument('--width', type=int, default=1024, help='Width of output image (default: 1024)')
     parser.add_argument('--height', type=int, default=400, help='Height of output image (default: 400)')

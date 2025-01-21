@@ -9,3 +9,62 @@
 {"timestamp":1737417867,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
 {"timestamp":1737418151,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
 {"timestamp":1737418161,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418226,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418287,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418354,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418507,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418517,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418581,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418587,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737418720,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737419168,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737419349,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737419604,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737419615,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737419675,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"timestamp":1737419687,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737419884,"details":{"timeOnPage":197041.09999999404,"scrollDepth":592},"ip":"::1"}
+{"timestamp":1737419884,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737419884,"details":{"timeOnPage":197045.90000000596,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419884,"details":{"timeOnPage":197087.20000000298,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419884,"details":{"timeOnPage":197087.59999999404,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419892,"details":{"timeOnPage":7852.70000000298,"scrollDepth":592},"ip":"::1"}
+{"timestamp":1737419892,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737419892,"details":{"timeOnPage":7853.70000000298,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419892,"details":{"timeOnPage":7879.600000008941,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419892,"details":{"timeOnPage":7880.100000008941,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419919,"details":{"timeOnPage":27658.79999999702,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419919,"details":{"timeOnPage":27660.79999999702,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419939,"details":{"timeOnPage":47535.20000000298,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419939,"details":{"timeOnPage":47536.90000000596,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419973,"details":{"timeOnPage":80997.09999999404,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419973,"details":{"timeOnPage":80999.5,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419989,"details":{"timeOnPage":97906.40000000596,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419990,"details":{"timeOnPage":97907.70000000298,"scrollDepth":592},"ip":"::1"}
+{"timestamp":1737419990,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737419990,"details":{"timeOnPage":97961.90000000596,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419990,"details":{"timeOnPage":97962.40000000596,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419997,"details":{"timeOnPage":7212.29999999702,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419997,"details":{"timeOnPage":7213.29999999702,"scrollDepth":592},"ip":"::1"}
+{"timestamp":1737419997,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737419997,"details":{"timeOnPage":7230.5,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737419997,"details":{"timeOnPage":7230.100000008941,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420001,"details":{"timeOnPage":4695.899999991059,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420001,"details":{"timeOnPage":4697.0999999940395,"scrollDepth":592},"ip":"::1"}
+{"timestamp":1737420001,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737420001,"details":{"timeOnPage":4715.899999991059,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420001,"details":{"timeOnPage":4715.20000000298,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420006,"details":{"timeOnPage":4814.5999999940395,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420006,"details":{"timeOnPage":4815.5999999940395,"scrollDepth":592},"ip":"::1"}
+{"timestamp":1737420006,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737420006,"details":{"timeOnPage":4836.5999999940395,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420006,"details":{"timeOnPage":4837.29999999702,"scrollDepth":592},"ip":"::1"}
+{"timestamp":1737420014,"message":"Visit logged for visitor: v_678ee118df6bb0.88664886","request_uri":"\/cmiller\/public_html\/git\/welcome\/","method":"GET"}
+{"type":"exit","timestamp":1737420014,"details":{"timeOnPage":8054.100000008941,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420014,"details":{"timeOnPage":8053,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420014,"details":{"timeOnPage":8086.70000000298,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420014,"details":{"timeOnPage":8087,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420019,"details":{"timeOnPage":4801.100000008941,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420019,"details":{"timeOnPage":4798.70000000298,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420030,"details":{"timeOnPage":15432.90000000596,"scrollDepth":592},"ip":"::1"}
+{"type":"exit","timestamp":1737420030,"details":{"timeOnPage":15435.40000000596,"scrollDepth":592},"ip":"::1"}

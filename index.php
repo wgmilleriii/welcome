@@ -9,6 +9,10 @@ Logger::init();
 $sessionData = UXSessionHandler::initSession($_GET['ux'] ?? null);
 $currentExperience = UXSessionHandler::getPreferredExperience();
 
+// Version control and cache busting
+define('JS_VERSION', '1.0.0');
+$cacheBuster = '?v=' . JS_VERSION . '&r=' . rand();
+
 // Log the visit
 Logger::logVisit($sessionData);
 ?>
@@ -18,25 +22,26 @@ Logger::logVisit($sessionData);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Mountain Experience</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/controls.css">
-    <!-- Pass session data to JavaScript -->
+    <link rel="stylesheet" href="css/styles.css<?php echo $cacheBuster; ?>">
+    <link rel="stylesheet" href="css/animations.css<?php echo $cacheBuster; ?>">
+    <link rel="stylesheet" href="css/controls.css<?php echo $cacheBuster; ?>">
+    <!-- Pass session data and version to JavaScript -->
     <script>
         window.sessionData = <?php echo json_encode($sessionData); ?>;
         window.currentExperience = <?php echo json_encode($currentExperience); ?>;
+        window.JS_VERSION = <?php echo json_encode(JS_VERSION); ?>;
     </script>
-    <!-- Load GSAP and plugins first -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-    <!-- Load our modules after -->
-    <script src="js/analytics.js" type="module"></script>
-    <script src="js/ux-detector.js" type="module"></script>
-    <script src="js/animations.js" type="module"></script>
-    <script src="js/controls.js" type="module"></script>
-    <script src="js/spinners.js" type="module"></script>
-    <script src="js/main.js" type="module"></script>
+    <!-- Load third-party libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
+    <!-- Load application scripts with cache busting -->
+    <script type="module" src="js/analytics.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
+    <script type="module" src="js/ux-detector.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
+    <script type="module" src="js/animations.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
+    <script type="module" src="js/controls.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
+    <script type="module" src="js/spinners.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
+    <script type="module" src="js/main.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
 </head>
 <body>
     <!-- Header with video link and waveform -->
@@ -45,8 +50,21 @@ Logger::logVisit($sessionData);
             Watch the Video
         </a>
         <div class="waveform-container">
-            <div class="waveform-bg" id="waveform-bg"></div>
-            <div class="waveform-progress" id="waveform-progress"></div>
+            <div id="waveform"></div>
+            <div class="audio-controls">
+                <button id="play-btn" class="control-btn" aria-label="Play">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                </button>
+                <button id="mute-btn" class="control-btn" aria-label="Mute">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <line x1="23" y1="9" x2="17" y2="15"></line>
+                        <line x1="17" y1="9" x2="23" y2="15"></line>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -65,22 +83,6 @@ Logger::logVisit($sessionData);
             </button>
             <button class="experience-btn" data-experience="singing" data-switch-type="redirect" data-tagline="Discover the intimate beauty of voice and lute">
                 Singing
-            </button>
-        </div>
-
-        <!-- Audio Controls -->
-        <div id="audio-controls" class="controls audio-controls">
-            <button id="mute-btn" class="control-btn" aria-label="Mute">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                    <line x1="23" y1="9" x2="17" y2="15"></line>
-                    <line x1="17" y1="9" x2="23" y2="15"></line>
-                </svg>
-            </button>
-            <button id="play-btn" class="control-btn" aria-label="Play">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
             </button>
         </div>
 

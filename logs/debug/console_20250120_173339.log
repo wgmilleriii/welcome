@@ -1,0 +1,46 @@
+lockdown-install.js:1 Removing unpermitted intrinsics
+animations.js?v=1.0.0&r=1477090916:6 Animations Module v1.0.0 initializing...
+animations.js?v=1.0.0&r=1477090916:11 ScrollTrigger plugin registered
+animations.js?v=1.0.0&r=1477090916:135 Starting animation initialization...
+animations.js?v=1.0.0&r=1477090916:147 Showing content immediately...
+animations.js?v=1.0.0&r=1477090916:164 Mountain and gradient layers visible
+animations.js?v=1.0.0&r=1477090916:30 Initializing WaveSurfer...
+animations.js?v=1.0.0&r=1477090916:54 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'create')
+    at initWaveSurfer (animations.js?v=1.0.0&r=1477090916:54:33)
+    at initAnimations (animations.js?v=1.0.0&r=1477090916:142:5)
+initWaveSurfer @ animations.js?v=1.0.0&r=1477090916:54
+initAnimations @ animations.js?v=1.0.0&r=1477090916:142
+await in initAnimations
+(anonymous) @ animations.js?v=1.0.0&r=1477090916:179
+animations.js:6 Animations Module v1.0.0 initializing...
+animations.js:11 ScrollTrigger plugin registered
+animations.js:135 Starting animation initialization...
+animations.js:147 Showing content immediately...
+animations.js:164 Mountain and gradient layers visible
+main.js?v=1.0.0&r=1477090916:54 DOM loaded, initializing application...
+main.js?v=1.0.0&r=1477090916:59 Animations module loaded
+animations.js:135 Starting animation initialization...
+animations.js:147 Showing content immediately...
+animations.js:164 Mountain and gradient layers visible
+main.js?v=1.0.0&r=1477090916:67 UX detector module loaded
+main.js?v=1.0.0&r=1477090916:74 Controls module loaded
+main.js?v=1.0.0&r=1477090916:81 Spinners module loaded
+main.js?v=1.0.0&r=1477090916:88 Analytics module loaded
+animations.js:30 Initializing WaveSurfer...
+animations.js:30 Initializing WaveSurfer...
+animations.js:54 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'create')
+    at initWaveSurfer (animations.js:54:33)
+    at initAnimations (animations.js:142:5)
+initWaveSurfer @ animations.js:54
+initAnimations @ animations.js:142
+await in initAnimations
+(anonymous) @ animations.js:179
+animations.js:54 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'create')
+    at initWaveSurfer (animations.js:54:33)
+    at Module.initAnimations (animations.js:142:5)
+initWaveSurfer @ animations.js:54
+initAnimations @ animations.js:142
+await in initAnimations
+(anonymous) @ main.js?v=1.0.0&r=1477090916:60
+Promise.then
+(anonymous) @ main.js?v=1.0.0&r=1477090916:58

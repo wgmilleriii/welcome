@@ -238,4 +238,125 @@ rm -rf /Applications/MAMP/tmp/php/cache/*
 php scripts/clear_cache.php
 ```
 
+## Technical Documentation
+
+### Utility Scripts
+
+#### Audio Processing
+- `utils/generate_waveform.py`: Generates waveform visualizations from MP3 files
+  ```bash
+  python utils/generate_waveform.py                    # Process new MP3s only
+  python utils/generate_waveform.py --force            # Regenerate all waveforms
+  python utils/generate_waveform.py --width 2048       # Custom width
+  ```
+
+- `utils/trim_audio.py`: Trims MP3 files to specified durations
+  ```bash
+  python utils/trim_audio.py                          # Trim to durations in config
+  python utils/trim_audio.py --duration 8             # Override duration
+  ```
+
+- `utils/validate_assets.py`: Validates all audio assets and configuration
+  ```bash
+  python utils/validate_assets.py                     # Verify MP3s, waveforms, and config
+  ```
+
+#### Asset Management
+Each audio experience is configured in `config/audio.json` with:
+- MP3 file location and duration
+- Start position and volume settings
+- YouTube source URL and description
+- Waveform visualization settings
+
+#### Development Commands
+
+1. Start MAMP server:
+```bash
+open /Applications/MAMP/MAMP.app
+```
+
+2. Generate waveforms for new audio:
+```bash
+python utils/generate_waveform.py
+```
+
+3. Validate all assets:
+```bash
+python utils/validate_assets.py
+```
+
+4. Clear caches:
+```bash
+rm -rf /Applications/MAMP/tmp/php/*
+php scripts/clear_cache.php
+```
+
+#### Deployment
+
+1. Backup audio files:
+```bash
+cp -r audio/ audio_backup/
+```
+
+2. Process new audio:
+```bash
+python utils/trim_audio.py        # Trim to configured lengths
+python utils/generate_waveform.py # Generate waveform images
+python utils/validate_assets.py   # Verify everything
+```
+
+3. Clear caches after deployment:
+```bash
+php scripts/clear_cache.php
+```
+
+### Configuration Files
+
+#### Audio Configuration (`config/audio.json`)
+Defines all audio experiences with:
+- File paths and durations
+- Playback settings
+- Source information
+- Visual settings
+
+Example:
+```json
+{
+    "experiences": {
+        "stravinsky": {
+            "file": "stravinsky.mp3",
+            "duration": 8.0,
+            "startPosition": 0,
+            "volume": 0.75,
+            "fadeIn": 1.0,
+            "youtube": {
+                "url": "https://youtube.com/watch?v=...",
+                "title": "L'Histoire du Soldat - Stravinsky conducting",
+                "description": "Historical recording of Stravinsky conducting..."
+            }
+        }
+    }
+}
+```
+
+#### Maintenance
+
+##### Log Management
+```bash
+# Rotate logs daily
+0 0 * * * mv /Applications/MAMP/htdocs/cmiller/public_html/git/welcome/logs/visits.log /Applications/MAMP/htdocs/cmiller/public_html/git/welcome/logs/visits.$(date +\%Y\%m\%d).log
+
+# Compress old logs
+0 1 * * * find /Applications/MAMP/htdocs/cmiller/public_html/git/welcome/logs/ -name "*.log.*" -mtime +7 -exec gzip {} \;
+
+# Clean up old logs
+0 2 * * * find /Applications/MAMP/htdocs/cmiller/public_html/git/welcome/logs/ -name "*.log.*.gz" -mtime +30 -exec rm {} \;
+```
+
+##### Session Cleanup
+```bash
+# Clean expired sessions every 30 minutes
+*/30 * * * * find /Applications/MAMP/tmp/php -name "sess_*" -mtime +1 -exec rm {} \;
+```
+
 Note: Some of these scripts need to be created as they're referenced here for completeness. They can be implemented as needed based on specific requirements. 

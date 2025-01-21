@@ -38,7 +38,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
 }
 
 #mountain-img {
@@ -52,7 +53,8 @@ body {
 .gradient-layer {
     background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 100%);
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
 }
 
 .text-container {
@@ -76,12 +78,18 @@ body {
 }
 
 .audio-controls {
-    top: 20px;
+    position: absolute;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
-    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
 }
 
 .control-btn {
@@ -129,25 +137,31 @@ body {
 .site-header {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     padding: 20px;
     text-align: center;
     z-index: 4;
-    opacity: 0;
-    animation: fadeInHeader 2s ease-in forwards;
-    animation-delay: 1s;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 12px 12px;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
 }
 
 .waveform-container {
     width: 100%;
-    height: 40px;
+    height: 80px;
     position: relative;
     margin-top: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .waveform-bg {
@@ -176,6 +190,22 @@ body {
     transition: width 0.1s linear;
 }
 
+#seek-marker {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.waveform-container:hover .waveform-bg {
+    opacity: 0.4;
+}
+
 .video-link {
     color: white;
     text-decoration: none;
@@ -190,6 +220,14 @@ body {
 .video-link:hover {
     background: rgba(0, 0, 0, 0.7);
     border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+#waveform {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .loading-screen {
@@ -203,6 +241,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .loader {
@@ -214,19 +253,16 @@ body {
     animation: spin 1s ease-in-out infinite;
 }
 
-@keyframes fadeInHeader {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
+}
+
+.experience-selector {
+    display: none; /* Hide the experience selector buttons */
+}
+
+#loading-screen {
+    display: none;
 } 

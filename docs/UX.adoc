@@ -1,0 +1,276 @@
+= Mountain Experience User Guide
+:toc: left
+:icons: font
+:source-highlighter: highlight.js
+:imagesdir: ../includes/i
+
+== Overview
+
+The Mountain Experience is an immersive audio-visual journey that combines parallax scrolling, dynamic audio playback, and interactive elements to create a unique user experience.
+
+== Audio Experiences
+
+[cols="1,2,3"]
+|===
+|Experience |Description |Configuration
+
+|Stravinsky
+|L'Histoire du Soldat - Stravinsky conducting (Default)
+|* Start Position: 45s
+* Volume: 0.75
+* Fade-in: 1.0s
+* Duration: 8s
+* Theme: Dark, intense
+* Default experience
+
+|Stravinsky Full
+|L'Histoire du Soldat - Complete version
+|* Start Position: 45s
+* Volume: 0.7
+* Fade-in: 2.0s
+* Duration: 30s
+* Theme: Dark, intense
+
+|Haydn
+|The Creation - A divine masterpiece
+|* Start Position: 120s
+* Volume: 0.7
+* Fade-in: 2.0s
+* Duration: 30s
+* Theme: Bright, majestic
+
+|Singing
+|Intimate baroque voice and lute performance
+|* Start Position: 30s
+* Volume: 0.8
+* Fade-in: 1.5s
+* Duration: 30s
+* Theme: Warm, intimate
+
+|Piano
+|Expressive piano miniature
+|* Start Position: 0s
+* Volume: 0.75
+* Fade-in: 1.0s
+* Duration: 8s
+* Theme: Intimate, reflective
+
+|Violin
+|Solo violin passage
+|* Start Position: 0s
+* Volume: 0.75
+* Fade-in: 1.0s
+* Duration: 8s
+* Theme: Lyrical, soaring
+
+|Guitar
+|Classical guitar interlude
+|* Start Position: 0s
+* Volume: 0.75
+* Fade-in: 1.0s
+* Duration: 8s
+* Theme: Gentle, flowing
+|===
+
+=== Experience Types
+
+==== Default Experience
+The default Stravinsky experience is an 8-second version that provides:
+* Immediate impact
+* Quick introduction to the piece
+* Faster initial loading
+* Smooth transitions to other experiences
+
+==== Full Experiences (30s)
+* Complete musical phrases
+* Extended development
+* Rich dynamic range
+* Longer fade transitions
+
+==== Miniatures (8s)
+* Focused musical moments
+* Quick emotional impact
+* Rapid transitions
+* Perfect for quick previews
+
+== Visual Elements
+
+=== Header Components
+
+[source,html]
+----
+<header class="site-header">
+    <!-- Video Link -->
+    <a href="..." class="video-link">Watch the Video</a>
+    
+    <!-- Waveform Visualization -->
+    <div class="waveform-container">
+        <div id="waveform"></div>
+        <!-- Audio Controls -->
+        <div class="audio-controls">...</div>
+    </div>
+</header>
+----
+
+=== Mountain Layer
+
+The mountain layer serves as the primary visual backdrop, featuring:
+
+* Full-screen parallax scrolling
+* Dynamic opacity transitions
+* Gradient overlay for depth
+* Responsive scaling
+
+[source,css]
+----
+.mountain-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+----
+
+=== Interactive Controls
+
+==== Audio Controls
+* Play/Pause button
+* Mute/Unmute button
+* Waveform visualization with seek functionality
+* Volume fade transitions
+
+==== Experience Selector
+* Three distinct experiences
+* Smooth transitions between states
+* Visual feedback on selection
+
+== Animation Sequences
+
+=== Initial Load
+1. Mountain fade-in
+2. Gradient overlay appearance
+3. Header elements fade-in
+4. Audio controls become active
+
+=== Audio Transitions
+[source,javascript]
+----
+// Fade in volume using GSAP
+gsap.to({volume: 0}, {
+    volume: audioSettings.volume,
+    duration: audioSettings.fadeIn,
+    ease: "power2.inOut"
+});
+----
+
+== Configuration Files
+
+=== Audio Settings (`config/audio.json`)
+[source,json]
+----
+{
+    "experiences": {
+        "stravinsky": {
+            "file": "stravinsky.mp3",
+            "startPosition": 45,
+            "volume": 0.7,
+            "fadeIn": 2.0
+        },
+        // ... other experiences
+    }
+}
+----
+
+=== Visual Settings (`config/visual.json`)
+[source,json]
+----
+{
+    "mountain": {
+        "parallaxDepth": 0.5,
+        "fadeInDuration": 2.0
+    },
+    "gradient": {
+        "colors": ["rgba(0,0,0,0.7)", "rgba(0,0,0,0.3)"],
+        "opacity": 0.5
+    }
+}
+----
+
+== User Interaction Flow
+
+1. Initial Load::
+* Loading screen appears
+* Mountain fades in
+* Audio begins with fade-in
+* Controls become interactive
+
+2. Audio Control::
+* Click waveform to seek
+* Use play/pause for playback
+* Mute/unmute with smooth transitions
+
+3. Experience Switching::
+* Select new experience
+* Smooth transition between states
+* Audio crossfades
+* Visual elements update
+
+== Responsive Behavior
+
+=== Desktop
+* Full-width mountain view
+* Header at 80% width
+* Large waveform visualization
+
+=== Tablet
+* Maintained aspect ratio
+* Adjusted control spacing
+* Optimized touch targets
+
+=== Mobile
+* Vertical layout optimization
+* Simplified controls
+* Touch-friendly interface
+
+== Performance Considerations
+
+* Audio files trimmed to 30 seconds
+* Waveform images pre-generated
+* Lazy loading of experiences
+* Smooth animation transitions
+* Cache control implementation
+
+== Troubleshooting
+
+[qanda]
+Audio not playing::
+    Check browser autoplay policies. User interaction may be required.
+
+Waveform not showing::
+    Verify waveform image generation. Check file paths.
+
+Mountain not visible::
+    Confirm image loading and CSS opacity settings.
+
+== Development Guidelines
+
+=== Adding New Experiences
+1. Add MP3 file to `audio/` directory
+2. Configure in `audio.json`
+3. Generate waveform image
+4. Update experience selector
+
+=== Modifying Animations
+1. Use GSAP for transitions
+2. Maintain smooth fades
+3. Consider performance
+4. Test across devices
+
+== Future Enhancements
+
+* Multiple mountain scenes
+* Advanced audio visualizations
+* Interactive music elements
+* Educational components
+* Community features 

@@ -2,29 +2,47 @@
     "experiences": {
         "stravinsky": {
             "file": "stravinsky.mp3",
-            "startPosition": 45,
-            "volume": 0.7,
-            "fadeIn": 2.0,
-            "description": "L'Histoire du Soldat - Stravinsky conducting"
+            "startPosition": 0,
+            "volume": 0.75,
+            "fadeIn": 1.0,
+            "duration": 8.0,
+            "description": "Stravinsky's Histoire du Soldat",
+            "youtube": {
+                "url": "https://www.youtube.com/watch?v=kJg-Q8QYZtE",
+                "title": "L'Histoire du Soldat - Stravinsky conducting",
+                "description": "A rare historical recording of Igor Stravinsky himself conducting his masterpiece L'Histoire du Soldat (The Soldier's Tale). This neoclassical theatrical work tells the parable of a soldier who trades his fiddle to the devil for a book that predicts the future economy."
+            }
         },
         "haydn": {
             "file": "haydn.mp3",
-            "startPosition": 120,
-            "volume": 0.7,
-            "fadeIn": 2.0,
-            "description": "The Creation - Haydn"
+            "startPosition": 0,
+            "volume": 0.75,
+            "fadeIn": 1.0,
+            "duration": 30.0,
+            "description": "Haydn's The Creation",
+            "youtube": {
+                "url": "https://www.youtube.com/watch?v=IXijFfheCbg",
+                "title": "The Creation - Joseph Haydn",
+                "description": "Haydn's oratorio The Creation (Die Sch\u00f6pfung) depicts and celebrates the creation of the world as described in the Book of Genesis. This masterwork is known for its sublime representation of chaos transforming into order and light."
+            }
         },
         "singing": {
             "file": "singing.mp3",
-            "startPosition": 30,
-            "volume": 0.8,
-            "fadeIn": 1.5,
-            "description": "Baroque Voice and Lute"
+            "startPosition": 0,
+            "volume": 0.75,
+            "fadeIn": 1.0,
+            "duration": 30.0,
+            "description": "Baroque Music",
+            "youtube": {
+                "url": "https://www.youtube.com/watch?v=2R_AoJ2BORI",
+                "title": "Early Baroque Music Collection",
+                "description": "A curated collection of early Baroque music featuring authentic period instruments and historically informed performances. This selection showcases the intricate counterpoint and emotional expressiveness characteristic of the Baroque era."
+            }
         }
     },
     "defaults": {
-        "volume": 0.7,
-        "fadeIn": 2.0,
-        "crossFade": 1.0
+        "volume": 0.75,
+        "fadeIn": 1.0,
+        "duration": 8.0
     }
-} 
+}
