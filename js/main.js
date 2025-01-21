@@ -90,4 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(err => console.error('Error loading analytics:', err));
 });
 
+// Log initialization
+console.log(`Main Module v${window.JS_VERSION || '1.1'} initializing...`);
+
 export { state }; 

@@ -69,6 +69,9 @@ export function initControls(state, sound) {
 
     // Initialize scrubber
     const scrubber = new Scrubber(sound, state);
+
+    // Log initialization
+    console.log(`Controls Module v${window.JS_VERSION || '1.1'} initializing...`);
 }
 
 class VideoPreview {

@@ -3,7 +3,7 @@ const gsap = window.gsap;
 const ScrollTrigger = window.ScrollTrigger;
 
 // Log module initialization
-console.log(`Animations Module v${window.JS_VERSION || '1.0.0'} initializing...`);
+console.log(`Animations Module v${window.JS_VERSION || '1.1'} initializing...`);
 
 // Only register ScrollTrigger if it exists
 if (gsap && ScrollTrigger) {
@@ -57,7 +57,19 @@ function initWaveSurfer(audioConfig) {
             backend: 'WebAudio',
             hideScrollbar: true,
             interact: true,
-            responsive: true
+            responsive: true,
+            dragToSeek: true, // Enable drag-to-seek functionality
+            plugins: [
+                // Add envelope plugin for fade effects
+                WaveSurfer.envelope.create({
+                    fadeInStart: 0,
+                    fadeInEnd: 0.8,
+                    fadeInCurve: 'linear',
+                    fadeOutStart: -0.8, // Start fade out 0.8 seconds before end
+                    fadeOutEnd: 0,
+                    fadeOutCurve: 'linear'
+                })
+            ]
         });
 
         console.log('WaveSurfer instance created successfully');
@@ -67,23 +79,33 @@ function initWaveSurfer(audioConfig) {
         console.log(`Loading audio file: ${audioFile}`);
         wavesurfer.load(audioFile);
 
+        // Set up time update handler for marker movement
+        const seekMarker = document.createElement('div');
+        seekMarker.id = 'seek-marker';
+        document.querySelector('#waveform').appendChild(seekMarker);
+
+        wavesurfer.on('audioprocess', () => {
+            const currentTime = wavesurfer.getCurrentTime();
+            const duration = wavesurfer.getDuration();
+            const progress = (currentTime / duration) * 100;
+            seekMarker.style.left = `${progress}%`;
+            seekMarker.style.opacity = '1';
+        });
+
+        // Hide marker when playback ends
+        wavesurfer.on('finish', () => {
+            seekMarker.style.opacity = '0';
+        });
+
         // Set up event listeners
         wavesurfer.on('ready', () => {
             console.log('WaveSurfer ready, initializing playback...');
             // Set initial volume and position
-            wavesurfer.setVolume(0); // Start at 0 volume
+            wavesurfer.setVolume(audioSettings.volume); // Set to target volume immediately since we have envelope
             wavesurfer.seekTo(audioSettings.startPosition / wavesurfer.getDuration());
             
-            // Start playback and fade in
+            // Start playback
             wavesurfer.play();
-            gsap.to({volume: 0}, {
-                volume: audioSettings.volume,
-                duration: audioSettings.fadeIn || 1.0,
-                ease: "power2.inOut",
-                onUpdate: function() {
-                    wavesurfer.setVolume(this.targets()[0].volume);
-                }
-            });
         });
 
         // Set up play button
@@ -96,6 +118,9 @@ function initWaveSurfer(audioConfig) {
                 playBtn.innerHTML = isPlaying ? 
                     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>' :
                     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>';
+                
+                // Show/hide marker based on playback state
+                seekMarker.style.opacity = isPlaying ? '1' : '0';
             };
         }
 
@@ -130,6 +155,30 @@ function initWaveSurfer(audioConfig) {
                 muteBtn.classList.toggle('muted', !isMuted);
             };
         }
+
+        // Enable seeking by clicking on waveform
+        wavesurfer.on('interaction', (newTime) => {
+            console.log('Waveform interaction - seeking to:', newTime);
+            seekMarker.style.opacity = wavesurfer.isPlaying() ? '1' : '0';
+        });
+
+        // Add click handler for waveform container
+        const waveformContainer = document.querySelector('#waveform');
+        waveformContainer.addEventListener('click', (e) => {
+            const rect = waveformContainer.getBoundingClientRect();
+            const relativeX = e.clientX - rect.left;
+            const percentage = relativeX / rect.width;
+            const duration = wavesurfer.getDuration();
+            const newTime = percentage * duration;
+            
+            console.log('Waveform clicked - seeking to:', newTime);
+            wavesurfer.seekTo(percentage);
+            
+            if (!wavesurfer.isPlaying()) {
+                wavesurfer.play();
+                playBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+            }
+        });
 
         return wavesurfer;
     } catch (error) {

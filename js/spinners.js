@@ -1,3 +1,6 @@
+// Log initialization
+console.log(`Spinners Module v${window.JS_VERSION || '1.1'} initializing...`);
+
 // Handle text spinning animations
 export function initSpinners(state) {
     const startSpinner = document.getElementById('start-spinner');

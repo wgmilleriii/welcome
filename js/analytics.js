@@ -31,6 +31,9 @@ class Analytics {
         } catch (error) {
             console.warn('Analytics initialization error:', error);
         }
+
+        // Log initialization
+        console.log(`Analytics Module v${window.JS_VERSION || '1.1'} initializing...`);
     }
 
     async processQueue() {

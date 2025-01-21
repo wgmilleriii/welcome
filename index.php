@@ -10,7 +10,7 @@ $sessionData = UXSessionHandler::initSession($_GET['ux'] ?? null);
 $currentExperience = UXSessionHandler::getPreferredExperience();
 
 // Version control and cache busting
-define('JS_VERSION', '1.0.0');
+define('JS_VERSION', '1.1');
 $cacheBuster = '?v=' . JS_VERSION . '&r=' . rand();
 
 // Log the visit
@@ -22,26 +22,40 @@ Logger::logVisit($sessionData);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Mountain Experience</title>
-    <link rel="stylesheet" href="css/styles.css<?php echo $cacheBuster; ?>">
-    <link rel="stylesheet" href="css/animations.css<?php echo $cacheBuster; ?>">
-    <link rel="stylesheet" href="css/controls.css<?php echo $cacheBuster; ?>">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="includes/i/Sandia_Mountains_optimized.jpg" as="image">
+    <link rel="preload" href="css/styles.css<?php echo '?v=' . JS_VERSION; ?>" as="style">
+    <link rel="preload" href="audio/<?php echo $currentExperience; ?>.mp3" as="audio">
+    
+    <!-- Preconnect to CDNs -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css<?php echo '?v=' . JS_VERSION; ?>">
+    <link rel="stylesheet" href="css/animations.css<?php echo '?v=' . JS_VERSION; ?>">
+    <link rel="stylesheet" href="css/controls.css<?php echo '?v=' . JS_VERSION; ?>">
+    
     <!-- Pass session data and version to JavaScript -->
     <script>
         window.sessionData = <?php echo json_encode($sessionData); ?>;
         window.currentExperience = <?php echo json_encode($currentExperience); ?>;
         window.JS_VERSION = <?php echo json_encode(JS_VERSION); ?>;
     </script>
-    <!-- Load third-party libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
-    <!-- Load application scripts with cache busting -->
-    <script type="module" src="js/analytics.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
-    <script type="module" src="js/ux-detector.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
-    <script type="module" src="js/animations.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
-    <script type="module" src="js/controls.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
-    <script type="module" src="js/spinners.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
-    <script type="module" src="js/main.js?v=<?php echo JS_VERSION; ?>&r=<?php echo rand(); ?>"></script>
+    
+    <!-- Load third-party libraries with version-based cache busting -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script defer src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
+    
+    <!-- Load application scripts with version-based cache busting -->
+    <script type="module" src="js/analytics.js?v=<?php echo JS_VERSION; ?>"></script>
+    <script type="module" src="js/ux-detector.js?v=<?php echo JS_VERSION; ?>"></script>
+    <script type="module" src="js/animations.js?v=<?php echo JS_VERSION; ?>"></script>
+    <script type="module" src="js/controls.js?v=<?php echo JS_VERSION; ?>"></script>
+    <script type="module" src="js/spinners.js?v=<?php echo JS_VERSION; ?>"></script>
+    <script type="module" src="js/main.js?v=<?php echo JS_VERSION; ?>"></script>
 </head>
 <body>
     <!-- Header with video link and waveform -->
@@ -50,13 +64,13 @@ Logger::logVisit($sessionData);
             Watch the Video
         </a>
         <div class="waveform-container">
+            <button id="play-btn" class="control-btn" aria-label="Play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+            </button>
             <div id="waveform"></div>
             <div class="audio-controls">
-                <button id="play-btn" class="control-btn" aria-label="Play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                    </svg>
-                </button>
                 <button id="mute-btn" class="control-btn" aria-label="Mute">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
