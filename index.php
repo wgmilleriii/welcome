@@ -45,9 +45,9 @@ Logger::logVisit($sessionData);
     </script>
     
     <!-- Load third-party libraries with version-based cache busting -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <script defer src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
     
     <!-- Load application scripts with version-based cache busting -->
     <script type="module" src="js/analytics.js?v=<?php echo JS_VERSION; ?>"></script>
@@ -58,27 +58,10 @@ Logger::logVisit($sessionData);
     <script type="module" src="js/main.js?v=<?php echo JS_VERSION; ?>"></script>
 </head>
 <body>
-    <!-- Header with video link and waveform -->
+    <!-- Header with waveform -->
     <header class="site-header">
-        <a href="https://youtu.be/Wcyk7TK3DNY?si=9iKDKuf_GQhyoUof&t=433" target="_blank" rel="noopener noreferrer" class="video-link">
-            Watch the Video
-        </a>
         <div class="waveform-container">
-            <button id="play-btn" class="control-btn" aria-label="Play">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-            </button>
             <div id="waveform"></div>
-            <div class="audio-controls">
-                <button id="mute-btn" class="control-btn" aria-label="Mute">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                        <line x1="23" y1="9" x2="17" y2="15"></line>
-                        <line x1="17" y1="9" x2="23" y2="15"></line>
-                    </svg>
-                </button>
-            </div>
         </div>
     </header>
 
