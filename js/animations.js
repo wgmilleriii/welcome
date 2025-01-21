@@ -1,12 +1,36 @@
-// Initialize GSAP
+// Initialize GSAP from CDN loaded version
 const gsap = window.gsap;
 const ScrollTrigger = window.ScrollTrigger;
 
-gsap.registerPlugin(ScrollTrigger);
+// Only register ScrollTrigger if it exists
+if (gsap && ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+}
+
+// Load audio configuration
+async function loadAudioConfig() {
+    try {
+        const response = await fetch('config/audio.json');
+        if (!response.ok) throw new Error('Failed to load audio config');
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading audio config:', error);
+        return null;
+    }
+}
 
 // Handle all GSAP animations and scroll triggers
-export function initAnimations() {
+export async function initAnimations() {
+    // Check if GSAP is loaded
+    if (!gsap) {
+        console.error('GSAP not loaded');
+        return;
+    }
+
     console.log('Initializing animations...'); // Debug log
+    
+    // Load audio configuration
+    const audioConfig = await loadAudioConfig();
     
     // Hide loading screen
     const loadingScreen = document.getElementById('loading-screen');
@@ -16,20 +40,57 @@ export function initAnimations() {
             duration: 0.5,
             onComplete: () => {
                 loadingScreen.style.display = 'none';
-                startContentAnimations();
+                startContentAnimations(audioConfig);
             }
         });
     } else {
         console.warn('Loading screen element not found');
-        startContentAnimations();
+        startContentAnimations(audioConfig);
     }
 }
 
-function startContentAnimations() {
-    // Initial mountain animation
+function updateWaveformProgress(audio) {
+    const progress = document.getElementById('waveform-progress');
+    if (progress) {
+        const seek = audio.seek() || 0;
+        const duration = audio.duration() || 1;
+        const percentage = (seek / duration) * 100;
+        progress.style.width = `${percentage}%`;
+        
+        if (audio.playing()) {
+            requestAnimationFrame(() => updateWaveformProgress(audio));
+        }
+    }
+}
+
+function startContentAnimations(audioConfig) {
+    // Initial mountain fade in from black
+    const mountainLayer = document.querySelector('.mountain-layer');
     const mountain = document.getElementById('mountain-img');
-    if (mountain) {
-        gsap.fromTo(mountain, 
+    const gradientLayer = document.querySelector('.gradient-layer');
+    
+    if (mountain && mountainLayer && gradientLayer) {
+        // Set initial states
+        gsap.set(mountainLayer, { opacity: 0 });
+        gsap.set(gradientLayer, { opacity: 0 });
+        
+        // Create timeline for coordinated animation
+        const tl = gsap.timeline();
+        
+        // Fade in mountain
+        tl.to(mountainLayer, {
+            opacity: 1,
+            duration: 2,
+            ease: "power2.inOut"
+        })
+        // Fade in gradient/shading
+        .to(gradientLayer, {
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.inOut"
+        }, "-=1") // Start 1 second before mountain fade completes
+        // Mountain slight movement
+        .fromTo(mountain, 
             { y: 0 },
             { 
                 y: 100,
@@ -45,9 +106,65 @@ function startContentAnimations() {
                         ease: "power2.out"
                     });
                 }
-            }
+            },
+            "-=0.5" // Start slightly before gradient completes
         );
     }
+
+    // Set up waveform visualization
+    const waveformBg = document.getElementById('waveform-bg');
+    const waveformProgress = document.getElementById('waveform-progress');
+    const currentExperience = window.currentExperience || 'stravinsky';
+    
+    if (waveformBg && waveformProgress) {
+        const waveformPath = `includes/i/waveforms/${currentExperience}.png`;
+        waveformBg.style.backgroundImage = `url(${waveformPath})`;
+        waveformProgress.style.backgroundImage = `url(${waveformPath})`;
+    }
+
+    // Get audio settings from config
+    const audioSettings = audioConfig?.experiences?.[currentExperience] || {
+        startPosition: 0,
+        volume: 0.7,
+        fadeIn: 2.0
+    };
+
+    // Initialize audio in muted state
+    const audio = new Howl({
+        src: [`audio/${currentExperience}.mp3`],
+        autoplay: true,
+        loop: true,
+        volume: 0,
+        onload: () => {
+            // Start from configured position
+            audio.seek(audioSettings.startPosition);
+            
+            // Start waveform progress animation
+            updateWaveformProgress(audio);
+            
+            // Fade in audio controls once audio is loaded
+            gsap.fromTo('.audio-controls',
+                { opacity: 0, y: -20 },
+                { 
+                    opacity: 1, 
+                    y: 0,
+                    duration: 1,
+                    delay: 1,
+                    ease: "power2.out"
+                }
+            );
+        },
+        onplay: () => {
+            updateWaveformProgress(audio);
+        },
+        onseek: () => {
+            updateWaveformProgress(audio);
+        }
+    });
+
+    // Store audio instance and settings for later use
+    window.audioInstance = audio;
+    window.audioSettings = audioSettings;
 
     // Fade in text container
     gsap.fromTo('.text-container',
@@ -56,60 +173,22 @@ function startContentAnimations() {
             opacity: 1, 
             y: 0,
             duration: 1.5,
-            delay: 0.5,
+            delay: 2.5, // Start after mountain animation
             ease: "power2.out"
         }
     );
-
-    // Fade in audio controls
-    gsap.fromTo('.audio-controls',
-        { opacity: 0, y: -20 },
-        { 
-            opacity: 1, 
-            y: 0,
-            duration: 1,
-            delay: 1,
-            ease: "power2.out"
-        }
-    );
-
-    // Footer fade in is handled by CSS animation
 
     // Controls fade in sequence
     gsap.to('.spin-controls', {
         opacity: 1,
         duration: 0.5,
-        delay: 2
+        delay: 3
     });
 
     gsap.to('.mountain-controls', {
         opacity: 1,
         duration: 0.5,
-        delay: 2.5
-    });
-
-    // Parallax effects
-    gsap.to('.mountain-layer', {
-        scrollTrigger: {
-            trigger: 'body',
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: 1
-        },
-        y: (i, target) => -target.offsetHeight * 0.1
-    });
-
-    // Gradient shift on scroll
-    ScrollTrigger.create({
-        trigger: 'body',
-        start: 'top top',
-        end: 'bottom bottom',
-        onUpdate: self => {
-            const progress = self.progress;
-            document.querySelector('.gradient-layer').style.background = 
-                `linear-gradient(${180 + progress * 30}deg, 
-                var(--space-blue-1), var(--space-blue-2))`;
-        }
+        delay: 3.5
     });
 }
 

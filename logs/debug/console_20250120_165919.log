@@ -1,0 +1,25 @@
+lockdown-install.js:1 Removing unpermitted intrinsics
+animations.js:9 Initializing animations...
+analytics.js:121 
+        
+        
+       POST http://localhost:8888/api/log.php 404 (Not Found)
+sendLog @ analytics.js:121
+logPageview @ analytics.js:73
+Analytics @ analytics.js:12
+(anonymous) @ analytics.js:154
+analytics.js:137 Analytics error: Error: HTTP error! status: 404
+    at Analytics.sendLog (analytics.js:133:23)
+    at async Analytics.logPageview (analytics.js:73:13)
+sendLog @ analytics.js:137
+await in sendLog
+logPageview @ analytics.js:73
+Analytics @ analytics.js:12
+(anonymous) @ analytics.js:154
+main.js:54 DOM loaded, initializing application...
+main.js:59 Animations module loaded
+animations.js:9 Initializing animations...
+main.js:67 UX detector module loaded
+main.js:74 Controls module loaded
+main.js:81 Spinners module loaded
+main.js:88 Analytics module loaded

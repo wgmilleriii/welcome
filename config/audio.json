@@ -1,0 +1,30 @@
+{
+    "experiences": {
+        "stravinsky": {
+            "file": "stravinsky.mp3",
+            "startPosition": 45,
+            "volume": 0.7,
+            "fadeIn": 2.0,
+            "description": "L'Histoire du Soldat - Stravinsky conducting"
+        },
+        "haydn": {
+            "file": "haydn.mp3",
+            "startPosition": 120,
+            "volume": 0.7,
+            "fadeIn": 2.0,
+            "description": "The Creation - Haydn"
+        },
+        "singing": {
+            "file": "singing.mp3",
+            "startPosition": 30,
+            "volume": 0.8,
+            "fadeIn": 1.5,
+            "description": "Baroque Voice and Lute"
+        }
+    },
+    "defaults": {
+        "volume": 0.7,
+        "fadeIn": 2.0,
+        "crossFade": 1.0
+    }
+} 

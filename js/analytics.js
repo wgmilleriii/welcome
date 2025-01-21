@@ -1,154 +1,139 @@
 // Analytics Module
 class Analytics {
     constructor() {
-        this.startTime = Date.now();
-        this.lastInteraction = this.startTime;
-        this.interactions = 0;
-        
-        // Setup event listeners
-        this.setupEventListeners();
-        
-        // Log initial pageview
-        this.logPageview();
-        
-        // Setup exit tracking
-        this.setupExitTracking();
+        this.baseUrl = window.location.origin;
+        this.apiEndpoint = `${this.baseUrl}/cmiller/public_html/git/welcome/api/log.php`;
+        this.initialized = false;
+        this.queue = [];
+        this.init();
     }
 
-    setupEventListeners() {
-        // Track all clicks
-        document.addEventListener('click', (e) => {
-            this.trackInteraction('click', {
-                element: e.target.tagName,
-                class: e.target.className,
-                id: e.target.id
+    init() {
+        try {
+            // Set up page visibility change detection
+            document.addEventListener('visibilitychange', () => {
+                if (document.visibilityState === 'hidden') {
+                    this.logExit();
+                }
             });
-        });
 
-        // Track experience switches
-        document.querySelectorAll('.experience-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.trackInteraction('experience_switch', {
-                    from: window.currentExperience,
-                    to: btn.dataset.experience
-                });
+            // Set up before unload
+            window.addEventListener('beforeunload', () => {
+                this.logExit();
             });
-        });
 
-        // Track audio controls
-        document.querySelectorAll('#audio-controls button').forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.trackInteraction('audio_control', {
-                    action: btn.getAttribute('aria-label').toLowerCase()
-                });
-            });
-        });
+            // Log initial pageview
+            this.logPageview();
 
-        // Track scroll depth
-        let maxScroll = 0;
-        document.addEventListener('scroll', this.throttle(() => {
-            const scrollDepth = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
-            if (scrollDepth > maxScroll) {
-                maxScroll = scrollDepth;
-                this.trackInteraction('scroll_depth', { depth: maxScroll });
-            }
-        }, 1000));
+            this.initialized = true;
+            // Process any queued events
+            this.processQueue();
+        } catch (error) {
+            console.warn('Analytics initialization error:', error);
+        }
     }
 
-    setupExitTracking() {
-        window.addEventListener('beforeunload', () => {
-            this.logExit();
-        });
-
-        // Track visibility changes
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                this.logExit(true);
+    async processQueue() {
+        while (this.queue.length > 0) {
+            const event = this.queue.shift();
+            try {
+                await this.sendLog(event);
+            } catch (error) {
+                console.warn('Failed to process queued event:', error);
             }
-        });
+        }
+    }
+
+    queueEvent(event) {
+        this.queue.push(event);
+        if (this.initialized) {
+            this.processQueue();
+        }
     }
 
     async logPageview() {
         try {
-            await this.sendLog('pageview');
+            const event = {
+                type: 'pageview',
+                url: window.location.href,
+                title: document.title,
+                timestamp: new Date().toISOString()
+            };
+            await this.sendLog(event);
         } catch (error) {
-            console.error('Failed to log pageview:', error);
+            console.warn('Failed to log pageview:', error);
+            this.queueEvent(event);
         }
     }
 
-    async trackInteraction(action, details = {}) {
-        this.interactions++;
-        this.lastInteraction = Date.now();
-        
+    async logInteraction(action, details = {}) {
         try {
-            await this.sendLog('interaction', {
+            const event = {
+                type: 'interaction',
                 action,
                 details,
-                timeOnPage: Date.now() - this.startTime,
-                interactionCount: this.interactions
-            });
+                timestamp: new Date().toISOString()
+            };
+            await this.sendLog(event);
         } catch (error) {
-            console.error('Failed to log interaction:', error);
+            console.warn('Failed to log interaction:', error);
+            this.queueEvent(event);
         }
     }
 
-    async logExit(isVisibilityChange = false) {
-        const data = {
-            timeOnPage: Date.now() - this.startTime,
-            lastInteraction: Date.now() - this.lastInteraction,
-            totalInteractions: this.interactions,
-            type: isVisibilityChange ? 'visibility_change' : 'page_exit'
-        };
-
+    async logError(message, context = {}) {
         try {
-            await this.sendLog('interaction', {
-                action: 'exit',
-                details: data
-            });
-
-            // Store exit data in localStorage for return visit analysis
-            localStorage.setItem('last_visit', JSON.stringify({
-                timestamp: Date.now(),
-                data
-            }));
+            const event = {
+                type: 'error',
+                message,
+                context,
+                timestamp: new Date().toISOString()
+            };
+            await this.sendLog(event);
         } catch (error) {
-            console.error('Failed to log exit:', error);
+            console.warn('Failed to log error:', error);
+            this.queueEvent(event);
         }
     }
 
-    async sendLog(type, data = {}) {
+    async logExit() {
         try {
-            const response = await fetch('/api/log.php', {
+            const event = {
+                type: 'exit',
+                timestamp: new Date().toISOString(),
+                details: {
+                    timeOnPage: performance.now(),
+                    scrollDepth: window.scrollY + window.innerHeight
+                }
+            };
+            await this.sendLog(event);
+        } catch (error) {
+            console.warn('Failed to log exit:', error);
+        }
+    }
+
+    async sendLog(data) {
+        try {
+            const response = await fetch(this.apiEndpoint, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    type,
-                    ...data
-                })
+                body: JSON.stringify(data)
             });
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-        } catch (error) {
-            // Log to console but don't throw to prevent disrupting user experience
-            console.error('Analytics error:', error);
-        }
-    }
 
-    throttle(func, limit) {
-        let inThrottle;
-        return function(...args) {
-            if (!inThrottle) {
-                func.apply(this, args);
-                inThrottle = true;
-                setTimeout(() => inThrottle = false, limit);
-            }
-        };
+            return await response.json();
+        } catch (error) {
+            console.warn('Analytics error:', error);
+            throw error;
+        }
     }
 }
 
 // Initialize analytics
-export const analytics = new Analytics(); 
+const analytics = new Analytics();
+export default analytics; 

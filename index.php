@@ -39,11 +39,15 @@ Logger::logVisit($sessionData);
     <script src="js/main.js" type="module"></script>
 </head>
 <body>
-    <!-- Header with video link -->
+    <!-- Header with video link and waveform -->
     <header class="site-header">
         <a href="https://youtu.be/Wcyk7TK3DNY?si=9iKDKuf_GQhyoUof&t=433" target="_blank" rel="noopener noreferrer" class="video-link">
             Watch the Video
         </a>
+        <div class="waveform-container">
+            <div class="waveform-bg" id="waveform-bg"></div>
+            <div class="waveform-progress" id="waveform-progress"></div>
+        </div>
     </header>
 
     <div id="loading-screen" class="loading-screen">
