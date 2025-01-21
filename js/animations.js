@@ -140,12 +140,20 @@ function showContent() {
     const mountainLayer = document.querySelector('.mountain-layer');
     const mountain = document.getElementById('mountain-img');
     const gradientLayer = document.querySelector('.gradient-layer');
+    const textContainer = document.querySelector('.text-container');
     
     if (mountain && mountainLayer && gradientLayer) {
         // Show mountain immediately
         mountainLayer.style.opacity = '1';
         gradientLayer.style.opacity = '1';
         console.log('Mountain and gradient layers visible');
+    }
+    
+    // Show text container immediately
+    if (textContainer) {
+        textContainer.style.opacity = '1';
+        textContainer.style.transform = 'translateY(0)';
+        console.log('Text container visible');
     }
     
     // Show header content immediately
